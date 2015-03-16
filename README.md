@@ -4,7 +4,7 @@ Quick Links
 ------------
 [Detailed project plan](https://github.com/eburdon/EvolutionHub/wiki/Detailed-Project-Plan) (In Wiki)
 
-[Work Log](www.google.ca) (In Wiki)
+[Work Log](https://github.com/eburdon/EvolutionHub/wiki/Work-Log) (In Wiki)
 
 Intro
 ------
