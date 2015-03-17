@@ -35,8 +35,17 @@ Methodology
 
 
 Run Instructions (prototype)
-----------------
+-----------------------------
 * Open command line within folder containing server.js
 * Execute 'node server.js'
 * Navigate to http://localhost:8080/
 * View application
+
+
+Learning goals: languages/tools
+-------------------------------
+* AngularJS, NodeJs + express (MEAN stack; front-end)
+* Grunt
+* Yeoman
+* Bower
+* Saas-compass
