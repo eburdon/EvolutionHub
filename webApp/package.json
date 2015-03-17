@@ -1,0 +1,11 @@
+{
+  "name": "webApp",
+  "version": "1.0.0",
+  "description": "Evolution Hub webApp",
+  "main": "server.js",
+  "author": "Erika Burdon, Fraser DeLisle",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.12.2"
+  }
+}

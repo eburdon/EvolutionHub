@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- This is truly the FRAME of our website; All homepage content should be saved on 'home'-->
+
+
+<head>
+	<meta charset="UTF-8">
+	<title>Simple EvoHub Frame</title>
+
+	<!-- Set the base path for angular routing; FOR PRETTY URLs -->
+	<base href="/">
+
+	<!-- CSS -->
+	<!-- Load bootstrap and fontawesome via CDN  + animation tools-->
+	<!-- Using BOOTSTRAP and FONTAWESOME to make our styles easier-->
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css">
+
+	<!-- My styles DONT WORRY ABOUT FOR NOW == NOT WORKING; WANT TO INCLUDE FOR ANIMATIONS -->
+	<!-- <link rel="stylesheet" href="css_temp/style.css"> -->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<style> 
+		body{ padding-top: 50px; } 
+	</style>
+
+	<!-- JS -->
+	<!-- Load angular routing feature via CDN  + animation spells-->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-route.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-animate.js"></script>
+
+	<!-- Load our JS files; RELATIVE TO *WHAT*?? ===== CURRENTLY NOT WORKING; ROOT DEFINED IN SERVER FILE? ======
+	<script src="app.js"></script>
+	<script src="app.routes.js"></script> -->
+	<script src="app/app.js"></script>
+	<script src="app/app.routes.js"></script>
+</head>
+
+
+
+<!-- Apply our controllers to applications via body class -->
+<body class="container" ng-app="routerApp" ng-controller="mainController as main">
+
+	<!-- Header and Navbar -->
+	<header>
+		<nav class="navbar navbar-default">
+
+			<ul class="nav navbar-nav navbar-left">
+				<li><a href="/reaCenter"><i class="fa fa-home"></i>Research Center</a></li>
+				<li><a href="/eduCenter"><i class="fa fa-shield"></i>Education Center</a></li>
+			</ul>
+
+			<!-- 'i' is an ICON provided by FONTAWESOME -->
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+				<li><a href="/about"><i class="fa fa-shield"></i>About</a></li>
+				<li><a href="/contact"><i class="fa fa-comment"></i>Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<!-- Angular templating will go here -->
+
+		<div class="jumbotron">
+			<p> {{main.bigMessage}} </p>
+		</div>
+
+		<!-- Added outerclass so we can wrap specfic calls to -->
+		<!-- This is where content will be INJECTED-->
+		<div id="content-views">
+			<div ng-view></div>
+		</div>
+
+	</main>
+
+</body>
+
+</html>
