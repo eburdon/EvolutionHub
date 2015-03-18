@@ -1,9 +1,28 @@
-<!DOCTYPE html>
-<html>
-		<!-- MAIN CONTENT AND INJECTED VIEWS; Old way first.-->
-		<div class="jumbotron text-center">
-			<h1>Research Splash Page</h1>
-			<p>{{ research.message }}</p>
+<!-- MAIN CONTENT AND INJECTED VIEWS; Old way first.-->
+<div class="jumbotron text-center" ng-controller="researchController as research">
+	<h1>Research Splash Page</h1>
+	<p>{{ research.message }}</p>
+</div>
+
+<div class="row"  align="center">
+<h1>Research Evolution by...</h1>
+	<div class="col-md-6">
+		<div class="research-type_splash", width="50%">
+		<article>
+			<a href="/questionList"><img src="assets/img/question.png" alt="byQuestion/Topic" height=100px></a>
+			<h3>QUESTION</h3>
+		</article>
 		</div>
-	</main>
-</html>
+	</div>
+
+	<div class="col-md-6">
+		<div class="research-type_splash", width="50%">
+		<article>
+			<a href="/codebaseList"><img src="assets/img/codebase.png" alt="byCodebase" height=100px></a>
+			<h3>CODEBASE</h3>
+		</article>
+		</div>
+	</div>
+
+	<p>Click either image for relevant information</p>
+</div>

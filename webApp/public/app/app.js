@@ -34,4 +34,28 @@ angular.module('routerApp', ['routerRoutes', 'ngAnimate'] )
 .controller('educationController', function() {
 	var vm = this;
 	vm.message = 'Learn stuff here!';
+})
+
+// SOFTWARE LAWS
+.controller('softwareLawsController', function() {
+	var vm = this;
+	vm.message = 'Software laws here!';
+})
+
+// BENCHMARKS
+.controller('benchmarksController', function() {
+	var vm = this;
+	vm.message = 'Benchmarks here!';
+})
+
+// QUESTION LIST
+.controller('questionListController', function() {
+	var vm = this;
+	vm.message = 'Question list stuff here!';
+})
+
+// CODEBASELIST
+.controller('codebaseListController', function() {
+	var vm = this;
+	vm.message = 'Codebase stuff here!';
 });

@@ -1,9 +1,41 @@
-<!DOCTYPE html>
-<html>
-		<!-- MAIN CONTENT AND INJECTED VIEWS; Old way first.-->
-		<div class="jumbotron text-center">
-			<h1>Education Welcome Page</h1>
-			<p>{{ education.message }}</p>
+<!-- MAIN CONTENT AND INJECTED VIEWS; Old way first.-->
+<div class="jumbotron text-center" ng-controller="educationController as education">
+	<h1>Education Welcome Page </h1>
+
+	<p>{{ education.message }}</p>
+</div>
+
+<!-- ROW CLASS - grid boxes are horizontal on full view; stacked on mobile -->
+<div class="row">
+	<div class="col-md-9", id="right_Information", box-sizing="border-box">
+		<div class="info-preview">
+		<article>
+			<h1>INFORMATION ABOUT THE 8 LAWS</h1>
+			<br>
+			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.... short blurb</p>
+			<a href="/softLaws">...Read more</a>
+		</article>
 		</div>
-	</main>
-</html>
+
+		<div class="info-preview">
+		<article>
+			<h1>DETERMINE WHERE YOUR PROJECT IS IN THE EVOLUTIONARY PROCESS</h1>
+			<br>
+			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.... short blurb</p>
+			<a href="/benchmarks">...Read more</a>
+		</article>
+		</div>
+
+	</div>
+
+	<div class="col-md-3", id="left_links">
+	<article>
+		<h3>INTERESTING LINKS</h3>
+		Mythical Man Month<br>
+		LINK<br>
+		LINK<br>
+		LINK<br>
+	</article>
+	</div>
+
+</div>

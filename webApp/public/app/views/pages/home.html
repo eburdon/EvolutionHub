@@ -1,10 +1,32 @@
-<!DOCTYPE html>
-<html>
-	<!-- MAIN CONTENT AND INJECTED VIEWS; Old way first.-->
-	<div class="jumbotron text-center">
-		<h1>HOME Page Content</h1>
+<!-- MAIN CONTENT AND INJECTED VIEWS; Old way first.-->
+<div class="jumbotron text-center" ng-controller="homeController as home">
+	<h1>HOME Page Content</h1>
 		
-		<p>{{ home.message }}</p>
+	<p>{{home.message}}</p>
+</div>
+
+<div class="text">
+<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+</div>
+
+<div class="row"  align="center">
+	<div class="col-md-6">
+		<div class="infocenter-splash", width="50%">
+		<article>
+			<a href="/eduCenter"><img src="assets/img/rocket.png" alt="rocketEducation" height=100px></a>
+			<h3>EDUCATION CENTER</h3>
+			<p>Pellentesque habitant morbi tristique senectus et netus </p>
+		</article>
+		</div>
 	</div>
-	</main>
-</html>
+
+	<div class="col-md-6">
+		<div class="infocenter-splash", width="50%">
+		<article>
+			<a href="/reaCenter"><img src="assets/img/flask.png" alt="flashResearch" height=100px></a>
+			<h3>RESEARCH CENTER</h3>
+			<p>Pellentesque habitant morbi tristique senectus et netus </p>
+		</article>
+		</div>
+	</div>
+</div>

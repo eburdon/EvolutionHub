@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-		<!-- MAIN CONTENT AND INJECTED VIEWS; Old way first.-->
-		<div class="jumbotron text-center">
-			<h1>Contact Page</h1>
-			<p>{{ contact.message }}</p>
-		</div>
-	</main>
-</html>
+<!-- MAIN CONTENT AND INJECTED VIEWS; Old way first.-->
+<div class="jumbotron text-center" ng-controller="contactController as contact">
+	<h1>Contact Page</h1>
+	<p>{{ contact.message }}</p>
+</div>

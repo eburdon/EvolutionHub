@@ -38,6 +38,34 @@ angular.module('routerRoutes', ['ngRoute'])
 			templateUrl : 'app/views/pages/educationSplash.html',
 			controller : 'educationController',
 			contollerAs: 'education'
+		})
+
+		// EVOLUTION LAWS route
+		.when('/softLaws', {
+			templateUrl : 'app/views/pages/softwareLaws.html',
+			controller : 'softwareLawsController',
+			contollerAs: 'softLaw'
+		})
+
+		// BENCHMARKS route
+		.when('/benchmarks', {
+			templateUrl : 'app/views/pages/benchmarks.html',
+			controller : 'benchmarksController',
+			contollerAs: 'bench'
+		})
+
+		// QUESTIONLIST route
+		.when('/questionList', {
+			templateUrl : 'app/views/pages/questionList.html',
+			controller : 'questionListController',
+			contollerAs: 'qlc'
+		})
+
+		// CODEBASE route
+		.when('/codebaseList', {
+			templateUrl : 'app/views/pages/codebaseList.html',
+			controller : 'codebaseController',
+			contollerAs: 'cbc'
 		});
 
 	// Set our app to have pretty URLs
