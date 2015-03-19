@@ -42,12 +42,6 @@ angular.module('routerApp', ['routerRoutes', 'ngAnimate'] )
 	vm.message = 'Software laws here!';
 })
 
-// BENCHMARKS
-.controller('benchmarksController', function() {
-	var vm = this;
-	vm.message = 'Benchmarks here!';
-})
-
 // QUESTION LIST
 .controller('questionListController', function() {
 	var vm = this;
