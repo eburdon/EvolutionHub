@@ -1,0 +1,3 @@
+[submodule "webApp/public/assets/project_sources/eburdon/Seng371-SoftwareEvolutionClassProject"]
+	path = webApp/public/assets/project_sources/eburdon/Seng371-SoftwareEvolutionClassProject
+	url = https://github.com/eburdon/Seng371-SoftwareEvolutionClassProject.git
