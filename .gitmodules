@@ -1,3 +1,30 @@
 [submodule "webApp/public/assets/project_sources/eburdon/Seng371-SoftwareEvolutionClassProject"]
 	path = webApp/public/assets/project_sources/eburdon/Seng371-SoftwareEvolutionClassProject
 	url = https://github.com/eburdon/Seng371-SoftwareEvolutionClassProject.git
+[submodule "webApp/public/assets/project_sources/371student/SENG-371-Project-1"]
+	path = webApp/public/assets/project_sources/371student/SENG-371-Project-1
+	url = https://github.com/PolloDiablo/SENG-371-Project-1.git
+[submodule "webApp/public/assets/project_sources/devin13/SENG371-Devin-and-Andrew"]
+	path = webApp/public/assets/project_sources/devin13/SENG371-Devin-and-Andrew
+	url = https://github.com/devinc13/SENG371-Devin-and-Andrew.git
+[submodule "webApp/public/assets/project_sources/gregnr/SoftwareEvolutionAnalysis"]
+	path = webApp/public/assets/project_sources/gregnr/SoftwareEvolutionAnalysis
+	url = https://github.com/gregnr/SoftwareEvolutionAnalysis.git
+[submodule "webApp/public/assets/project_sources/guand/seng371-project1"]
+	path = webApp/public/assets/project_sources/guand/seng371-project1
+	url = https://github.com/guand/seng371-project1.git
+[submodule "webApp/public/assets/project_sources/Hoverbear/transit"]
+	path = webApp/public/assets/project_sources/Hoverbear/transit
+	url = https://github.com/Hoverbear/transit.git
+[submodule "webApp/public/assets/project_sources/Jsryo/seng371"]
+	path = webApp/public/assets/project_sources/Jsryo/seng371
+	url = https://github.com/Jsyro/seng371.git
+[submodule "webApp/public/assets/project_sources/knowelsc/seng371project1"]
+	path = webApp/public/assets/project_sources/knowelsc/seng371project1
+	url = https://github.com/knowlesc/seng371project1.git
+[submodule "webApp/public/assets/project_sources/mrivettuvic/SENG-371"]
+	path = webApp/public/assets/project_sources/mrivettuvic/SENG-371
+	url = https://github.com/mrivettuvic/SENG-371.git
+[submodule "webApp/public/assets/project_sources/PolloDiablo/SENG-371-Project-1"]
+	path = webApp/public/assets/project_sources/PolloDiablo/SENG-371-Project-1
+	url = https://github.com/PolloDiablo/SENG-371-Project-1.git
