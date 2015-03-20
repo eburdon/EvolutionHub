@@ -5,12 +5,12 @@ var express = require('express');
 var app		= express();
 var path 	= require('path');
 
-// set public folder to serve public assets
-// NODE WILL LOOK HERE FOR JS, CSS, ETC FILES
+// Set public folder to serve public assets; will START to look here for JS, CSS, ETC. files...
 // app.use(express.static(__dirname + '/public/app'));
 app.use(express.static(__dirname + '/public'));
 
-// set up our (primary) route to the index.html file
+// Set up initialization page / primary route [to the index.html file]
+// gets ANY request to load the page...
 app.get('*', function(req, res) {
 	res.sendFile(path.join(__dirname + '/public/app/views/index.html'))
 });

@@ -13,10 +13,21 @@ angular.module('routerApp', ['routerRoutes', 'ngAnimate'] )
 })
 
 // About page controller
-.controller('aboutController', function() {
+// .controller('aboutController', function() {
+//	var vm = this;
+//	vm.message = 'This is my about page!';
+//})
+
+// About page controller - TESTING/ ATTEMPT TO GET SERVER-SIDE RESPONSE
+.controller('aboutController', ['$scope', function($scope) {
 	var vm = this;
-	vm.message = 'This is my about page!';
-})
+	vm.message = 'This is my about page! TEST';
+
+	$scope.foo = function () {
+		alert("Hello");
+		console.log("IT'S SO MAGICAL");
+	}
+}])
 
 // Finally, contact page controller
 .controller('contactController', function() {
