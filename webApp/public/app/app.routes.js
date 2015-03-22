@@ -9,63 +9,63 @@ angular.module('routerRoutes', ['ngRoute'])
 		.when('/', {
 			templateUrl : 'app/views/pages/home.html',
 			controller : 'homeController',
-			contollerAs: 'home'
+			controllerAs: 'home'
 		})
 
 		// Route for the ABOUT page
 		.when('/about', {
 			templateUrl : 'app/views/pages/about.html',
 			controller : 'aboutController',
-			contollerAs: 'about'
+			controllerAs: 'about'
 		})
 
 		// Route for CONTACT page
 		.when('/contact', {
 			templateUrl : 'app/views/pages/contact.html',
 			controller : 'contactController',
-			contollerAs: 'contact'
+			controllerAs: 'contact'
 		})
 
 		// RESEARCH route
 		.when('/reaCenter', {
 			templateUrl : 'app/views/pages/researchSplash.html',
 			controller : 'researchController',
-			contollerAs: 'research'
+			controllerAs: 'research'
 		})
 
 		// EDUCATION route
 		.when('/eduCenter', {
 			templateUrl : 'app/views/pages/educationSplash.html',
 			controller : 'educationController',
-			contollerAs: 'education'
+			controllerAs: 'education'
 		})
 
 		// EVOLUTION LAWS route
 		.when('/softLaws', {
 			templateUrl : 'app/views/pages/softwareLaws.html',
 			controller : 'softwareLawsController',
-			contollerAs: 'softLaw'
+			controllerAs: 'softLaw'
 		})
 
 		// BENCHMARKS route
 		.when('/benchmarks', {
 			templateUrl : 'app/views/pages/benchmarks.html',
 			controller : 'benchmarksController',
-			contollerAs: 'bench'
+			controllerAs: 'bench'
 		})
 
 		// QUESTIONLIST route
 		.when('/questionList', {
 			templateUrl : 'app/views/pages/questionList.html',
 			controller : 'questionListController',
-			contollerAs: 'qlc'
+			controllerAs: 'qlc'
 		})
 
 		// CODEBASE route
 		.when('/codebaseList', {
 			templateUrl : 'app/views/pages/codebaseList.html',
 			controller : 'codebaseController',
-			contollerAs: 'cbc'
+			controllerAs: 'cbc'
 		});
 
 	// Set our app to have pretty URLs
