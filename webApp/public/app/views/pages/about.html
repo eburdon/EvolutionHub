@@ -4,25 +4,14 @@
 	<p>{{ about.message }}</p>
 </div>
 
-<!-- This is testing that angular can detect HTML events -->
-<button ng-click="foo()">FRONT-END Function execution (browser alert)</button>
+<!-- This is testing that angular can detect HTML events == FRONT END RESPONSE -->
+<button ng-click="fooAlert()">FRONT-END Function execution (browser alert)</button>
 
-<!-- I need to somehow pass my html event to the server to take action (see script below) -->
+<!-- I need to somehow pass my html event to the server to take action == BACK END RESPONSE -->
 <div ng-app="testApp" ng-contoller="testController">
-<form ng-submit="notifyConsole()">
+<form ng-submit="fooConsole()">
 	<input type="submit" value="BACK-END Function execution (console log message)" />
 </form>
 </div>
-
-<!-- I want to make sure I can get a server response/back end executeable working
-This will ne needed if we want to run other people's projects -->
-<script type="text/javascript"> 
-angular.module("testApp", [])
-	.controller('testController', function($scope) {
-		$scope.notifyConsole = function() {
-		    console.log("ITS SO MAGICAL");
-	    }
-    });
-</script>
 
 <!-- FUTURE TRIES: try event emitter? Try socket.io?? -->

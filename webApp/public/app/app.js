@@ -1,57 +1,76 @@
+// MODULE / PAGE CONTROLS
 angular.module('routerApp', ['routerRoutes', 'ngAnimate'] )
 
-//create the controllers; this will be controller for ENTIRE site
+// ---- MASTER CONTROLLER ---- 
 .controller('mainController', function() {
 	var vm = this;
 	vm.bigMessage = "MAIN WELCOME MESSAGE";
 })
 
-// Home page-specific controller
+
+// ---- Primary Controllers ----
+
+// HOME
 .controller('homeController', function() {
 	var vm = this;
 	vm.message = "This is my homepage!";
 })
 
-// About page controller
-// .controller('aboutController', function() {
+// ABOUT -- PREVIOUS VERSION
+/* .controller('aboutController', function() {
 //	var vm = this;
 //	vm.message = 'This is my about page!';
-//})
+//}) */
 
-// About page controller - TESTING/ ATTEMPT TO GET SERVER-SIDE RESPONSE
+// ABOUT -- TESTING
 .controller('aboutController', ['$scope', function($scope) {
 	var vm = this;
-	vm.message = 'This is my about page! TEST';
+	vm.message = 'This is my about page! TEST CONTROLLER';
 
-	$scope.foo = function () {
-		alert("Hello");
-		console.log("IT'S SO MAGICAL");
+	// I WANT TO BE ABLE TO EXECUTE A SERVER-SIDE RESPONSE HERE
+	$scope.fooAlert = function () {
+		alert("Hello Alert - from controller");
+	}
+
+	$scope.fooConsole = function () {
+		alert("Hello Console - from controller");
 	}
 }])
 
-// Finally, contact page controller
+// CONTACT
 .controller('contactController', function() {
 	var vm = this;
 	vm.message = 'Contact us!';
 })
 
-// RESEARCH CENTER
+// RESEARCH 
 .controller('researchController', function() {
 	var vm = this;
 	vm.message = 'Do stuff here!';
 })
 
-// EDUCATION CENTER
+// EDUCATION 
 .controller('educationController', function() {
 	var vm = this;
 	vm.message = 'Learn stuff here!';
 })
+
+
+// ---- Education Controllers ----
 
 // SOFTWARE LAWS
 .controller('softwareLawsController', function() {
 	var vm = this;
 	vm.message = 'Software laws here!';
 })
+
+// BENCHMAKRS
+.controller('benchmarksController', function() {
+	var vm = this;
+	vm.message = 'Benchmakrs go here!';
+})
+
+// ---- Research Controllers ----
 
 // QUESTION LIST
 .controller('questionListController', function() {

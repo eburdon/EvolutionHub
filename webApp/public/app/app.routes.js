@@ -5,40 +5,44 @@ angular.module('routerRoutes', ['ngRoute'])
 .config(function($routeProvider, $locationProvider) {
 	$routeProvider
 
-		// Route for the homepage
+		// ---- Primary routes ----
+
+		// HOME
 		.when('/', {
 			templateUrl : 'app/views/pages/home.html',
 			controller : 'homeController',
 			controllerAs: 'home'
 		})
 
-		// Route for the ABOUT page
+		// ABOUT
 		.when('/about', {
 			templateUrl : 'app/views/pages/about.html',
-			controller : 'aboutController',
+			controller  : 'aboutController',
 			controllerAs: 'about'
 		})
 
-		// Route for CONTACT page
+		// CONTACT
 		.when('/contact', {
 			templateUrl : 'app/views/pages/contact.html',
 			controller : 'contactController',
 			controllerAs: 'contact'
 		})
 
-		// RESEARCH route
+		// RESEARCH 
 		.when('/reaCenter', {
 			templateUrl : 'app/views/pages/researchSplash.html',
 			controller : 'researchController',
 			controllerAs: 'research'
 		})
 
-		// EDUCATION route
+		// EDUCATION
 		.when('/eduCenter', {
 			templateUrl : 'app/views/pages/educationSplash.html',
 			controller : 'educationController',
 			controllerAs: 'education'
 		})
+
+		// ---- Education Information routes ----
 
 		// EVOLUTION LAWS route
 		.when('/softLaws', {
@@ -53,6 +57,8 @@ angular.module('routerRoutes', ['ngRoute'])
 			controller : 'benchmarksController',
 			controllerAs: 'bench'
 		})
+
+		// ---- Research Information routes ----
 
 		// QUESTIONLIST route
 		.when('/questionList', {
