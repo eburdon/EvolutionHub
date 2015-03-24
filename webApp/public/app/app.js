@@ -1,8 +1,11 @@
 // MODULE / PAGE CONTROLS
-angular.module('routerApp', ['routerRoutes', 'ngAnimate'] )
+var application = angular.module('routerApp', [
+	'routerRoutes', 
+	'ngAnimate'
+])
 
 // ---- MASTER CONTROLLER ---- 
-.controller('mainController', function() {
+application.controller('mainController', function() {
 	var vm = this;
 	vm.bigMessage = "MAIN WELCOME MESSAGE";
 })
@@ -11,7 +14,7 @@ angular.module('routerApp', ['routerRoutes', 'ngAnimate'] )
 // ---- Primary Controllers ----
 
 // HOME
-.controller('homeController', function() {
+application.controller('homeController', function() {
 	var vm = this;
 	vm.message = "This is my homepage!";
 })
@@ -23,7 +26,7 @@ angular.module('routerApp', ['routerRoutes', 'ngAnimate'] )
 //}) */
 
 // ABOUT -- TESTING
-.controller('aboutController', ['$scope', function($scope) {
+application.controller('aboutController', ['$scope', function($scope) {
 	var vm = this;
 	vm.message = 'This is my about page! TEST CONTROLLER';
 
@@ -33,24 +36,25 @@ angular.module('routerApp', ['routerRoutes', 'ngAnimate'] )
 	}
 
 	$scope.fooConsole = function () {
+		// this should be console log
 		alert("Hello Console - from controller");
 	}
 }])
 
 // CONTACT
-.controller('contactController', function() {
+application.controller('contactController', function() {
 	var vm = this;
 	vm.message = 'Contact us!';
 })
 
 // RESEARCH 
-.controller('researchController', function() {
+application.controller('researchController', function() {
 	var vm = this;
 	vm.message = 'Do stuff here!';
 })
 
 // EDUCATION 
-.controller('educationController', function() {
+application.controller('educationController', function() {
 	var vm = this;
 	vm.message = 'Learn stuff here!';
 })
@@ -59,13 +63,13 @@ angular.module('routerApp', ['routerRoutes', 'ngAnimate'] )
 // ---- Education Controllers ----
 
 // SOFTWARE LAWS
-.controller('softwareLawsController', function() {
+application.controller('softwareLawsController', function() {
 	var vm = this;
 	vm.message = 'Software laws here!';
 })
 
 // BENCHMAKRS
-.controller('benchmarksController', function() {
+application.controller('benchmarksController', function() {
 	var vm = this;
 	vm.message = 'Benchmakrs go here!';
 })
@@ -73,13 +77,13 @@ angular.module('routerApp', ['routerRoutes', 'ngAnimate'] )
 // ---- Research Controllers ----
 
 // QUESTION LIST
-.controller('questionListController', function() {
+application.controller('questionListController', function() {
 	var vm = this;
 	vm.message = 'Question list stuff here!';
 })
 
 // CODEBASELIST
-.controller('codebaseListController', function() {
+application.controller('codebaseListController', function() {
 	var vm = this;
 	vm.message = 'Codebase stuff here!';
 });

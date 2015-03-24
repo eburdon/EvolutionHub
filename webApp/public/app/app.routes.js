@@ -1,8 +1,11 @@
-// ROUTES FOR INJECTING
-angular.module('routerRoutes', ['ngRoute'])
+// CONFIGURE OUR ROUTES / CONTROLLERS
+angular.module('routerRoutes', [
+	'ngRoute',
+	// 'ngResource','ngSanitize',
+])
 
 // Configure our routes
-.config(function($routeProvider, $locationProvider) {
+.config(function($routeProvider, $locationProvider, $httpProvider) {
 	$routeProvider
 
 		// ---- Primary routes ----
