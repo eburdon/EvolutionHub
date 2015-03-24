@@ -60,8 +60,9 @@ application.controller('educationController', function() {
 
 	vm.link1Addr = eduLink.link1[0];
 	vm.link1Text = eduLink.link1[1];
-	vm.link2Text = eduLink.link2[0];
-	vm.link2Addr = eduLink.link2[1];
+
+	vm.link2Addr = eduLink.link2[0];
+	vm.link2Text = eduLink.link2[1];
 })
 
 

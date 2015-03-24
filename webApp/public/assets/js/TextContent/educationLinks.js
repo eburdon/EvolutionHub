@@ -1,4 +1,5 @@
 var eduLink = {
-	link1: ["www.google.ca", "Google"],
-	link2: ["www.github.com", "GitHub"]
+	// name : [target, display text]
+	link1: ["https://www.google.ca/", "Google"],
+	link2: ["http://www.github.com", "GitHub"]
 }
