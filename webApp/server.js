@@ -9,7 +9,6 @@ var path 	= require('path');
 var EventEmitter = require('events').EventEmitter;
 
 // Set public folder to serve public assets; will START to look here for JS, CSS, ETC. files...
-// app.use(express.static(__dirname + '/public/app'));
 app.use(express.static(__dirname + '/public'));
 
 // Set up initialization page / primary route [to the index.html file]
