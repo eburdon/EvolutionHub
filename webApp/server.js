@@ -4,6 +4,7 @@
 var express = require('express');
 var app		= express();
 var path 	= require('path');
+var projectExe = require('./projectExecutor');
 
 // TESTING
 var EventEmitter = require('events').EventEmitter;
