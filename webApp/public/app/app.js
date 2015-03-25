@@ -41,27 +41,33 @@ application.controller('aboutController', ['$scope', function($scope) {
 	}
 }])
 
+
 // CONTACT
 application.controller('contactController', function() {
 	var vm = this;
 	vm.message = 'Contact us!';
+
+	// FILL IN
 })
+
 
 // RESEARCH 
 application.controller('researchController', function() {
 	var vm = this;
 	vm.message = 'Do stuff here!';
 
+	// researchLinks.js
 	vm.tool1Adr = coolTool.link1[0]; vm.tool1Txt = coolTool.link1[1];
 	vm.tool2Adr = coolTool.link2[0]; vm.tool2Txt = coolTool.link2[1];
 })
+
 
 // EDUCATION 
 application.controller('educationController', function() {
 	var vm = this;
 	vm.message = 'Learn stuff here!';
 
-	// General Links
+	// General Links; educationLinks.js
 	vm.gen1Addr = eduGenLink.link1[0]; vm.gen1Text = eduGenLink.link1[1];
 	vm.gen2Addr = eduGenLink.link2[0]; vm.gen2Text = eduGenLink.link2[1];
 	vm.gen3Addr = eduGenLink.link3[0]; vm.gen3Text = eduGenLink.link3[1];
@@ -88,6 +94,7 @@ application.controller('softwareLawsController', function() {
 	var vm = this;
 	vm.message = 'Software laws here!';
 
+	// file source name
 	vm.paragraph1 = softLawContent.paragraph1;
 	vm.paragraph2 = softLawContent.paragraph2;
 	vm.paragraph3 = softLawContent.paragraph3;
@@ -98,6 +105,7 @@ application.controller('benchmarksController', function() {
 	var vm = this;
 	vm.message = 'Benchmarks go here!';
 
+	// benchmarkContent.js
 	vm.paragraph1 = benchmarkContent.paragraph1;
 	vm.paragraph2 = benchmarkContent.paragraph2;
 	vm.paragraph3 = benchmarkContent.paragraph3;
@@ -109,6 +117,21 @@ application.controller('benchmarksController', function() {
 application.controller('questionListController', function() {
 	var vm = this;
 	vm.message = 'Question list stuff here!';
+	vm.merp = "test";
+	// Defined in alphabetical order; projectDefintions.js
+	// BREAKING THE WEBPAGE; WHY?
+
+	// vm.question1  = 371student.question; 	 vm.summary1  = 371student.psummary;	// Might not like having a number in variable name. Change?
+	// vm.question2  = devin13.question;		 vm.summary2  = devin13.psummary;
+	// vm.question3  = eburdon.question;		 // vm.summary3  = eburdon.psummary;
+	/* vm.question4  = gregnr.question;		 vm.summary4  = gregnr.psummary;
+	vm.question5  = guand.question;			 vm.summary5  = guand.psummary;
+	vm.question6  = Hoverbear.question;		 vm.summary6  = Hoverbear.psummary;
+	vm.question7  = Jsryo.question;			 vm.summary7  = Jsryo.psummary;
+	vm.question8  = knowelsc.question;		 vm.summary8  = knowelsc.psummary;
+	vm.question9  = mrivettuvic.question;	 vm.summary9  = mrivettuvic.psummary;
+	vm.question10 = PolloDiablo.question;	 vm.summary10 = PolloDiablo.psummary; */
+
 })
 
 // CODEBASELIST

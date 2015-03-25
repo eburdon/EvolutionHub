@@ -5,8 +5,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Simple EvoHub Frame</title>
-	<!-- Set the base path for angular routing; FOR PRETTY URLs -->
-	<base href="/">
+	
+	<base href="/">		<!-- Set the base path for angular routing; FOR PRETTY URLs -->
 
 	<!-- ==== CSS ==== -->
 	<!-- Load bootstrap and fontawesome via CDN  + animation tools-->
@@ -31,14 +31,16 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
 	<!-- My scripts-->
-	<script src="app/app.js"></script>
-	<script src="app/app.routes.js"></script>
+	<script src="app/app.routes.js"></script>	<!-- Configures (injected) routes-->
+	<script src="app/app.js"></script> 			<!-- Defines all CONTROLLERS -->
 
-	<!-- CONTENT FILES -->
+	<!-- TEXT CONTENT FILES -->
 	<script src="assets/js/TextContent/softLawContent.js"></script>
 	<script src="assets/js/TextContent/benchmarkContent.js"></script>
 	<script src="assets/js/TextContent/educationLinks.js"></script>
 	<script src="assets/js/TextContent/researchLinks.js"></script>
+	<!-- PROJECT SUMMARY/DEFINTIONS -->
+	<script src="assets/js/TextContent/projects.js"></script>
 </head>
 
 
