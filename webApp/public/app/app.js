@@ -51,6 +51,9 @@ application.controller('contactController', function() {
 application.controller('researchController', function() {
 	var vm = this;
 	vm.message = 'Do stuff here!';
+
+	vm.tool1Adr = coolTool.link1[0]; vm.tool1Txt = coolTool.link1[1];
+	vm.tool2Adr = coolTool.link2[0]; vm.tool2Txt = coolTool.link2[1];
 })
 
 // EDUCATION 
@@ -58,11 +61,23 @@ application.controller('educationController', function() {
 	var vm = this;
 	vm.message = 'Learn stuff here!';
 
-	vm.link1Addr = eduLink.link1[0];
-	vm.link1Text = eduLink.link1[1];
+	// General Links
+	vm.gen1Addr = eduGenLink.link1[0]; vm.gen1Text = eduGenLink.link1[1];
+	vm.gen2Addr = eduGenLink.link2[0]; vm.gen2Text = eduGenLink.link2[1];
+	vm.gen3Addr = eduGenLink.link3[0]; vm.gen3Text = eduGenLink.link3[1];
 
-	vm.link2Addr = eduLink.link2[0];
-	vm.link2Text = eduLink.link2[1];
+	// Links to papers
+	vm.ppr1Adr = eduPaperLink.link1[0]; vm.ppr1Txt = eduPaperLink.link1[1];
+	vm.ppr2Adr = eduPaperLink.link2[0]; vm.ppr2Txt = eduPaperLink.link2[1];
+	vm.ppr3Adr = eduPaperLink.link3[0]; vm.ppr3Txt = eduPaperLink.link3[1];
+	vm.ppr4Adr = eduPaperLink.link4[0]; vm.ppr4Txt = eduPaperLink.link4[1];
+	vm.ppr5Adr = eduPaperLink.link5[0]; vm.ppr5Txt = eduPaperLink.link5[1];
+	vm.ppr6Adr = eduPaperLink.link6[0]; vm.ppr6Txt = eduPaperLink.link6[1];
+	vm.ppr7Adr = eduPaperLink.link7[0]; vm.ppr7Txt = eduPaperLink.link7[1];
+
+	// Links to books
+	vm.bk1Adr = eduBookLink.link1[0]; vm.bk1Txt = eduBookLink.link1[1];
+	vm.bk2Adr = eduBookLink.link2[0]; vm.bk2Txt = eduBookLink.link2[1];
 })
 
 

@@ -1,44 +1,72 @@
 <!-- MAIN CONTENT AND INJECTED VIEWS; Old way first.-->
 <div class="jumbotron text-center" ng-controller="educationController as education">
 	<h1>Education Welcome Page </h1>
-
-	<p>{{ education.message }}</p>
+	<!-- <p>{{ education.message }}</p> -->
 </div>
 
-<!-- ROW CLASS - grid boxes are horizontal on full view; stacked on mobile -->
-<div class="row">
-	<div class="col-md-9" id="right_Information" style="box-sizing: border-box;">
-		<div class="info-preview">
-		<article>
-			<h1>INFORMATION ABOUT THE 8 LAWS</h1>
+
+<div class="container">
+
+	<!-- LEFT COLUMN CONTENT: Long readings -->
+	<div class="col-md-9" id="left_Information">
+
+		<div class="info-preview"><article><h1>Information about the 8 Laws</h1>
+
 			<!-- Restrict this via CSS? -->
 			<br>
 			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.... short blurb</p>
 			<a href="/softLaws">...Read more</a>
-		</article>
-		</div>
 
-		<div class="info-preview">
-		<article>
-			<h1>DETERMINE WHERE YOUR PROJECT IS IN THE EVOLUTIONARY PROCESS</h1>
+			</article>
+		</div><br>
+
+
+		<div class="info-preview"><article><h1>Where is my project in the Evolutionary process?</h1>
+
 			<!-- Restrict this via CSS? -->
 			<br>
 			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.... short blurb</p>
 			<a href="/benchmarks">...Read more</a>
+
+			</article>
+		</div><br>
+
+
+		<article><h1>Interesting Papers</h1>
+
+		<ul>
+			<li><a target="_blank" ng-href="{{education.ppr1Adr}}">{{education.ppr1Txt}}</a><br></li>
+			<li><a target="_blank" ng-href="{{education.ppr2Adr}}">{{education.ppr2Txt}}</a><br></li>
+			<li><a target="_blank" ng-href="{{education.ppr3Adr}}">{{education.ppr3Txt}}</a><br></li>
+			<li><a target="_blank" ng-href="{{education.ppr4Adr}}">{{education.ppr4Txt}}</a><br></li>
+			<li><a target="_blank" ng-href="{{education.ppr5Adr}}">{{education.ppr5Txt}}</a><br></li>
+			<li><a target="_blank" ng-href="{{education.ppr6Adr}}">{{education.ppr6Txt}}</a><br></li>
+			<li><a target="_blank" ng-href="{{education.ppr7Adr}}">{{education.ppr7Txt}}</a><br></li>
+		</ul>
+
+		</article><br>
+
+	</div>
+
+
+	<!-- RIGHT COLUMN CONTENT: Quick links -->
+	<div class="col-md-3" id="right_links">
+
+		<article><h3>General Links</h3>
+
+		<a target="_blank" ng-href="{{education.gen1Addr}}">{{education.gen1Text}}</a><br>
+		<a target="_blank" ng-href="{{education.gen2Addr}}">{{education.gen2Text}}</a><br>
+		<a target="_blank" ng-href="{{education.gen3Addr}}">{{education.gen3Text}}</a><br>
+
 		</article>
-		</div>
 
+
+		<article><h3>Book Links</h3>
+			
+		<a target="_blank" ng-href="{{education.bk1Adr}}">{{education.bk1Txt}}</a><br>
+		<a target="_blank" ng-href="{{education.bk2Adr}}">{{education.bk2Txt}}</a><br>
+
+		</article>
 	</div>
-
-	<div class="col-md-3" id="left_links">
-	<article>
-		<!-- ENSURE THAT THESE ARE OUTGOING, EXTERNAL LINKS! -->
-		<h3>INTERESTING LINKS</h3>
-
-		<a target="_self" ng-href="{{education.link1Addr}}">{{education.link1Text}}</a><br>
-
-		<a target="_self" ng-href="{{education.link2Addr}}">{{education.link2Text}}</a><br>
-	</article>
-	</div>
-
+	
 </div>
