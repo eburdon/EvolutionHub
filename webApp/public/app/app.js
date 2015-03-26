@@ -116,21 +116,39 @@ application.controller('benchmarksController', function() {
 // QUESTION LIST
 application.controller('questionListController', function() {
 	var vm = this;
-	vm.message = 'Question list stuff here!';
-	vm.merp = "test";
-	// Defined in alphabetical order; projectDefintions.js
-	// BREAKING THE WEBPAGE; WHY?
+	vm.message = 'Question list stuff here!'; // DEBUG STATEMENT
 
-	// vm.question1  = 371student.question; 	 vm.summary1  = 371student.psummary;	// Might not like having a number in variable name. Change?
-	// vm.question2  = devin13.question;		 vm.summary2  = devin13.psummary;
-	// vm.question3  = eburdon.question;		 // vm.summary3  = eburdon.psummary;
-	/* vm.question4  = gregnr.question;		 vm.summary4  = gregnr.psummary;
-	vm.question5  = guand.question;			 vm.summary5  = guand.psummary;
-	vm.question6  = Hoverbear.question;		 vm.summary6  = Hoverbear.psummary;
-	vm.question7  = Jsryo.question;			 vm.summary7  = Jsryo.psummary;
-	vm.question8  = knowelsc.question;		 vm.summary8  = knowelsc.psummary;
-	vm.question9  = mrivettuvic.question;	 vm.summary9  = mrivettuvic.psummary;
-	vm.question10 = PolloDiablo.question;	 vm.summary10 = PolloDiablo.psummary; */
+	// Defined in alphabetical order; projectDefintions.js
+	// author.(question Number)(author number)
+	vm.question1  = student.question; 	 	vm.summary1   = student.psummary;
+	vm.authors11  = student.pauthor[0];		vm.authors12  = student.pauthor[1];		vm.authors13  = student.pauthor[2];
+
+	vm.question2  = devin.question;		 	vm.summary2   = devin.psummary;
+	vm.authors21  = devin.pauthor[0];		vm.authors22  = devin.pauthor[1];
+
+	vm.question3  = eburdon.question;		vm.summary3   = eburdon.psummary;
+	vm.authors31  = eburdon.pauthor[0];
+
+	vm.question4  = gregnr.question;		vm.summary4   = gregnr.psummary;
+	vm.authors41  = gregnr.pauthor[0];		vm.authors42  = gregnr.pauthor[1];		vm.authors43  = gregnr.pauthor[2];		vm.authors44  = gregnr.pauthor[3];
+
+	vm.question5  = guand.question;			vm.summary5   = guand.psummary;
+	vm.authors51  = guand.pauthor[0];		vm.authors52  = guand.pauthor[1];		vm.authors53  = guand.pauthor[2];
+
+	vm.question6  = Hoverbear.question;		vm.summary6   = Hoverbear.psummary;
+	vm.authors61  = Hoverbear.pauthor[0];	vm.authors62  = Hoverbear.pauthor[1];
+
+	vm.question7  = Jsryo.question;			vm.summary7   = Jsryo.psummary;
+	vm.authors71  = Jsryo.pauthor[0];		vm.authors72  = Jsryo.pauthor[1];		vm.authors73  = Jsryo.pauthor[2];
+
+	vm.question8  = knowelsc.question;		vm.summary8   = knowelsc.psummary;
+	vm.authors81  = knowelsc.pauthor[0];	vm.authors82  = knowelsc.pauthor[1];
+
+	vm.question9  = mrivettuvic.question;	vm.summary9   = mrivettuvic.psummary;
+	vm.authors91  = mrivettuvic.pauthor[0];	vm.authors92  = mrivettuvic.pauthor[1];
+
+	vm.question10 = PolloDiablo.question;	vm.summary10  = PolloDiablo.psummary;
+	vm.authors101 = PolloDiablo.pauthor[0];
 
 })
 
