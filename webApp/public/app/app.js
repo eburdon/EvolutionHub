@@ -19,18 +19,12 @@ application.controller('homeController', function() {
 	vm.message = "This is my homepage!";
 })
 
-// ABOUT -- PREVIOUS VERSION
-/* .controller('aboutController', function() {
-//	var vm = this;
-//	vm.message = 'This is my about page!';
-//}) */
 
-// ABOUT -- TESTING
+// ABOUT; Trying to get server-side response here!
 application.controller('aboutController', ['$scope', function($scope) {
 	var vm = this;
-	vm.message = 'This is my about page! TEST CONTROLLER';
+	vm.message = 'This is my about controller!';
 
-	// I WANT TO BE ABLE TO EXECUTE A SERVER-SIDE RESPONSE HERE
 	$scope.fooAlert = function () {
 		alert("Hello Alert - from controller");
 	}
