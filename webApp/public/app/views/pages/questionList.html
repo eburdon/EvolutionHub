@@ -1,21 +1,34 @@
-<div class="jumbotron text-center" ng-controller="questionListController as qLC">
+<div class="jumbotron text-center" ng-controller="questionListController as listControl">
 	<h1>Research evolution by Topic</h1>
+    <!-- <p> {{listControl.message}} </p> -->
 </div>
 
 
 <div class="panel-group" id="accordion">
 
     <p>
-        This is a list of questions presented by groups in Project 1. Click a link to expand information about that question and execute the program.
+        This is a list of questions as presented by groups in Project 1!<br><br> 
+
+        Click a box and expand for more information and execute the program.<br>
+        <b>*Note:</b> Projects are listed in alphabetical order of the hosting github repository owner.<br><br>
     </p>
 
     <div class="panel panel-default">
         <div class="panel-heading"><h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> QUESTION 1 </a></h4>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> {{listControl.question1}} </a></h4>
         </div>
         <div id="collapseOne" class="panel-collapse collapse in">
         	<div class="panel-body">
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+                <p>
+                    {{listControl.summary1}}
+                </p>
+
+                <br><p>
+                    This project was written by:<br>
+                    <b>{{listControl.authors11}}, {{listControl.authors12}}, {{listControl.authors13}}</b><br><br>
+                    <button id="runButton">Run Project</button>
+
+                </p>
             </div>
         </div>
     </div>
@@ -23,11 +36,20 @@
 
     <div class="panel panel-default">
         <div class="panel-heading"><h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"> QUESTION 2 </a></h4>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"> {{listControl.question2}} </a></h4>
         </div>
         <div id="collapseTwo" class="panel-collapse collapse">
             <div class="panel-body">
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+                <p>
+                    {{listControl.summary2}}
+                </p>
+
+                <br><p>
+                    This project was written by:<br>
+                    <b>{{listControl.authors21}}, {{listControl.authors22}}</b><br><br>
+                    <button id="runButton">Run Project</button>
+
+                </p>
             </div>
         </div>
     </div>
@@ -35,88 +57,160 @@
 
     <div class="panel panel-default">
         <div class="panel-heading"><h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"> QUESTION 3 </a></h4>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"> {{listControl.question3}} </a></h4>
         </div>
         <div id="collapseThree" class="panel-collapse collapse">
             <div class="panel-body">
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+                <p>
+                    {{listControl.summary3}}
+                </p>
+
+                <br><p>
+                    This project was written by:<br>
+                    <b>{{listControl.authors31}}</b><br><br>
+                    <button id="runButton">Run Project</button>
+
+                </p>
             </div>
         </div>
     </div>
 
     <div class="panel panel-default">
         <div class="panel-heading"><h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"> QUESTION 4 </a></h4>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"> {{listControl.question4}} </a></h4>
         </div>
         <div id="collapseFour" class="panel-collapse collapse">
             <div class="panel-body">
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+                <p>
+                    {{listControl.summary4}}
+                </p>
+
+                <br><p>
+                    This project was written by:<br>
+                    <b>{{listControl.authors41}}, {{listControl.authors42}}, {{listControl.authors43}}, {{listControl.authors44}}</b><br><br>
+                    <button id="runButton">Run Project</button>
+
+                </p>
             </div>
         </div>
     </div>
 
     <div class="panel panel-default">
         <div class="panel-heading"><h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive"> QUESTION 5 </a></h4>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive"> {{listControl.question5}} </a></h4>
         </div>
         <div id="collapseFive" class="panel-collapse collapse">
             <div class="panel-body">
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+               <p>
+                    {{listControl.summary5}}
+                </p>
+
+                <br><p>
+                    This project was written by:<br>
+                    <b>{{listControl.authors51}}, {{listControl.authors52}}, {{listControl.authors53}}</b><br><br>
+                    <button id="runButton">Run Project</button>
+
+                </p>
             </div>
         </div>
     </div>
 
     <div class="panel panel-default">
         <div class="panel-heading"><h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix"> QUESTION 6 </a></h4>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix"> {{listControl.question6}} </a></h4>
         </div>
         <div id="collapseSix" class="panel-collapse collapse">
             <div class="panel-body">
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+               <p>
+                    {{listControl.summary6}}
+                </p>
+
+                <br><p>
+                    This project was written by:<br>
+                    <b>{{listControl.authors61}}, {{listControl.authors62}}</b><br><br>
+                    <button id="runButton">Run Project</button>
+
+                </p>
             </div>
         </div>
     </div>
 
     <div class="panel panel-default">
         <div class="panel-heading"><h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven"> QUESTION 7 </a></h4>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven"> {{listControl.question7}} </a></h4>
         </div>
         <div id="collapseSeven" class="panel-collapse collapse">
             <div class="panel-body">
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+                <p>
+                    {{listControl.summary7}}
+                </p>
+
+               <br><p>
+                    This project was written by:<br>
+                    <b>{{listControl.authors71}}, {{listControl.authors72}}, {{listControl.authors73}}</b><br><br>
+                    <button id="runButton">Run Project</button>
+
+                </p>
             </div>
         </div>
     </div>
 
     <div class="panel panel-default">
         <div class="panel-heading"><h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight"> QUESTION 8 </a></h4>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight"> {{listControl.question8}} </a></h4>
         </div>
         <div id="collapseEight" class="panel-collapse collapse">
             <div class="panel-body">
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+                <p>
+                    {{listControl.summary8}}
+                </p>
+
+                <br><p>
+                    This project was written by:<br>
+                    <b>{{listControl.authors81}}, {{listControl.authors82}}</b><br><br>
+                    <button id="runButton">Run Project</button>
+
+                </p>
             </div>
         </div>
     </div>
 
     <div class="panel panel-default">
         <div class="panel-heading"><h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine"> QUESTION 9 </a></h4>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine"> {{listControl.question9}} </a></h4>
         </div>
         <div id="collapseNine" class="panel-collapse collapse">
             <div class="panel-body">
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+                <p>
+                    {{listControl.summary9}}
+                </p>
+
+                <br><p>
+                    This project was written by:<br>
+                    <b>{{listControl.authors91}}, {{listControl.authors92}}</b><br><br>
+                    <button id="runButton">Run Project</button>
+
+                </p>
             </div>
         </div>
     </div>
 
     <div class="panel panel-default">
         <div class="panel-heading"><h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen"> QUESTION 10 </a></h4>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen"> {{listControl.question10}}</a></h4>
         </div>
         <div id="collapseTen" class="panel-collapse collapse">
             <div class="panel-body">
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+               <p>
+                    {{listControl.summary10}}
+                </p>
+
+                <br><p>
+                    This project was written by:<br>
+                    <b>{{listControl.authors101}}</b><br><br>
+                    <button id="runButton">Run Project</button>
+
+                </p>
             </div>
         </div>
     </div>

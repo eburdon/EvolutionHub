@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- This is truly the FRAME of our website; All homepage content should be saved on 'home'-->
-
+<!-- This is truly the FRAME of our website; All other pages are INJECTED into this one -->
 
 <head>
 	<meta charset="UTF-8">
 	<title>Simple EvoHub Frame</title>
-	<!-- Set the base path for angular routing; FOR PRETTY URLs -->
-	<base href="/">
+	
+	<base href="/">		<!-- Set the base path for angular routing; FOR PRETTY URLs -->
 
 	<!-- ==== CSS ==== -->
 	<!-- Load bootstrap and fontawesome via CDN  + animation tools-->
@@ -32,13 +31,18 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
 	<!-- My scripts-->
-	<script src="app/app.js"></script>
-	<script src="app/app.routes.js"></script>
+	<script src="app/app.routes.js"></script>	<!-- Configures (injected) routes-->
+	<script src="app/app.js"></script> 			<!-- Defines all CONTROLLERS -->
 
-	<!-- FIRST ATTEMPT TO EXECUTE A PROGRAM FROM SERVERSIDE
-	<script src="app/controllers/projectController.js"></script> -->
-	
+	<!-- TEXT CONTENT FILES -->
+	<script src="assets/js/TextContent/softLawContent.js"></script>
+	<script src="assets/js/TextContent/benchmarkContent.js"></script>
+	<script src="assets/js/TextContent/educationLinks.js"></script>
+	<script src="assets/js/TextContent/researchLinks.js"></script>
+	<!-- PROJECT SUMMARY/DEFINTIONS -->
+	<script src="assets/js/TextContent/projects.js"></script>
 </head>
+
 
 <!-- Apply our controllers to applications via body class -->
 <body class="container" ng-app="routerApp" ng-controller="mainController as main">
@@ -70,39 +74,41 @@
 			<p> {{main.bigMessage}} </p>
 		</div> -->
 
-		<!-- This is where content will be INJECTED; Added outerclass so we can wrap specfic calls to -->
+
+		<!-- This is where content will be INJECTED -->
 		<div id="content-views">
 			<div ng-view></div>
 		</div>
+		<!-- End injection -->
 
 	</main>
+
+
+    <footer id="footer-container">
+        <div class="footer">
+        <div class="row">
+            <div class="col-md-2" id="left_footer" style="box-sizing: border-box;">
+                <p>   <a href="/">Home</a>
+                    | <a href="/about">About</a>
+                    | <a href="/contact">Contact</a>
+                </p>
+            </div>
+
+            <div class="col-md-7" id="mid_footer" style="box-sizing: border-box;">
+                <p>
+                <b>Disclaimer:</b>
+                This website and application is a deliverable for the University of Victoria's SEng 371 course conducted January 2015 and is not affilitated with any professional development company.
+                </p>
+            </div>
+
+            <div class="col-md-2" id="right_footer" style="box-sizing: border-box;">
+                <p> <a href="http://scriptogr.am" title="Scriptogr.am">COPYRIGHT NOTICE</a></p>
+                <p>&copy; 2015</p>
+            </div>
+          </div>
+        </div>
+    </footer>
+
 </body>
-
-
-<footer id="footer-container">
-	<div class="footer">
-    <div class="row">
-    	<div class="col-md-2" id="left_footer" style="box-sizing: border-box;">
-        	<p>   <a href="/">Home</a>
-        		| <a href="/about">About</a>
-        		| <a href="/contact">Contact</a>
-        	</p>
-        </div>
-
-        <div class="col-md-7" id="mid_footer" style="box-sizing: border-box;">
-        	<p>
-        	<b>Disclaimer:</b> 
-          	This website and application is a deliverable for the University of Victoria's SEng 371 course conducted January 2015 and is not affilitated with any professional development company.
-        	</p>
-        </div>
-
-    	<div class="col-md-2" id="right_footer" style="box-sizing: border-box;">
-        	<p> <a href="http://scriptogr.am" title="Scriptogr.am">COPYRIGHT NOTICE</a></p>
-        	<p>&copy; 2015</p>
-        </div>
-        
-      </div>
-    </div>
-</footer>
 
 </html>

@@ -67,7 +67,7 @@ angular.module('routerRoutes', [
 		.when('/questionList', {
 			templateUrl : 'app/views/pages/questionList.html',
 			controller : 'questionListController',
-			controllerAs: 'qlc'
+			controllerAs: 'listControl'
 		})
 
 		// CODEBASE route
