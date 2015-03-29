@@ -150,4 +150,45 @@ application.controller('questionListController', function() {
 application.controller('codebaseListController', function() {
 	var vm = this;
 	vm.message = 'Codebase stuff here!';
+
+	vm.section1  = "Reddit";
+
+	vm.section2  = "JQueryMobile";
+
+	vm.section3  = "JQuery";
+
+	vm.section4  = "Bootstrap";
+	// vm.S4Q1 = Reddit.prjQ;
+	/* vm.s4.question2 = project2.question;
+	vm.s4.question3 = project3.question;*/
+
+	vm.section5  = "Rails";
+
+	vm.section6  = "Django";
+
+	vm.section7  = "Pyramid";
+
+	vm.section8  = "Flask";
+
+	vm.section9  = "NodeJS";
+
+	vm.section10 = "Python";
+
+	vm.section11 = "PixiJS";
+
+	vm.section12 = "AngularJS";
+
+	vm.section13 = "MelonJS";
+
+	vm.section14 = "Backbone";
+
+	vm.section15 = "Homebrew";
+
+	vm.section16 = "IOJS";
+
+	vm.section17 = "Marmotta";
+
+	vm.section18 = "ProjectForge";
+
+	vm.section19 = "SonarQube";
 });

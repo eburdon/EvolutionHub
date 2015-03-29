@@ -1,5 +1,6 @@
-<div class="jumbotron text-center" ng-controller="codebaseController as cbc">
+<div class="jumbotron text-center" ng-controller="codebaseListController as cbc">
 	<h1>Codebase list!</h1>
+    <!-- <p> {{cbc.test}} </p> -->
 </div>
 
 
@@ -11,7 +12,7 @@
 
     <div class="panel panel-default">
         <div class="panel-heading"><h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> CODEBASE 1 </a></h4>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> {{cbc.section1}} </a></h4>
         </div>
         <div id="collapseOne" class="panel-collapse collapse in">
         	<div class="panel-body">
@@ -23,7 +24,7 @@
 
     <div class="panel panel-default">
         <div class="panel-heading"><h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"> CODEBASE 2 </a></h4>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"> {{cbc.section2}} </a></h4>
         </div>
         <div id="collapseTwo" class="panel-collapse collapse">
             <div class="panel-body">
@@ -35,7 +36,7 @@
 
     <div class="panel panel-default">
         <div class="panel-heading"><h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"> CODEBASE 3 </a></h4>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"> {{cbc.section3}} </a></h4>
         </div>
         <div id="collapseThree" class="panel-collapse collapse">
             <div class="panel-body">
@@ -46,18 +47,26 @@
 
     <div class="panel panel-default">
         <div class="panel-heading"><h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"> CODEBASE 4 </a></h4>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"> {{cbc.section4}} </a></h4>
         </div>
         <div id="collapseFour" class="panel-collapse collapse">
             <div class="panel-body">
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+                <p>Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first web sites.</p><br>
+                <p><b>What can you study with Bootstrap?</b>
+                <ul>
+                    <!-- <li>{{cbc.S4Q1}}</li> -->
+                    <li>What can available tools tell us about code quality?</li>
+                    <li>How does the number of progressive (new feature) and anti-regressive (maintenance) changes over time affect the number of bugs discovered?</li>
+                    <li>How does the rate of feature additions change as a project grows in size?</li>
+                </ul>
+                </p>
             </div>
         </div>
     </div>
 
     <div class="panel panel-default">
         <div class="panel-heading"><h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive"> CODEBASE 5 </a></h4>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive"> {{cbc.section5}} </a></h4>
         </div>
         <div id="collapseFive" class="panel-collapse collapse">
             <div class="panel-body">
@@ -68,7 +77,7 @@
 
     <div class="panel panel-default">
         <div class="panel-heading"><h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix"> CODEBASE 6 </a></h4>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix"> {{cbc.section6}} </a></h4>
         </div>
         <div id="collapseSix" class="panel-collapse collapse">
             <div class="panel-body">
@@ -79,7 +88,7 @@
 
     <div class="panel panel-default">
         <div class="panel-heading"><h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven"> CODEBASE 7 </a></h4>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven"> {{cbc.section7}} </a></h4>
         </div>
         <div id="collapseSeven" class="panel-collapse collapse">
             <div class="panel-body">
@@ -90,7 +99,7 @@
 
     <div class="panel panel-default">
         <div class="panel-heading"><h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight"> CODEBASE 8 </a></h4>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight"> {{cbc.section8}} </a></h4>
         </div>
         <div id="collapseEight" class="panel-collapse collapse">
             <div class="panel-body">
@@ -101,7 +110,7 @@
 
     <div class="panel panel-default">
         <div class="panel-heading"><h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine"> CODEBASE 9 </a></h4>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine"> {{cbc.section9}} </a></h4>
         </div>
         <div id="collapseNine" class="panel-collapse collapse">
             <div class="panel-body">
@@ -112,7 +121,7 @@
 
     <div class="panel panel-default">
         <div class="panel-heading"><h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen"> CODEBASE 10 </a></h4>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen"> {{cbc.section10}} </a></h4>
         </div>
         <div id="collapseTen" class="panel-collapse collapse">
             <div class="panel-body">
@@ -123,7 +132,7 @@
 
     <div class="panel panel-default">
         <div class="panel-heading"><h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseEleven"> CODEBASE 11 </a></h4>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseEleven"> {{cbc.section11}} </a></h4>
         </div>
         <div id="collapseEleven" class="panel-collapse collapse">
             <div class="panel-body">
@@ -134,7 +143,7 @@
 
     <div class="panel panel-default">
         <div class="panel-heading"><h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve"> CODEBASE 12 </a></h4>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve"> {{cbc.section12}} </a></h4>
         </div>
         <div id="collapseTwelve" class="panel-collapse collapse">
             <div class="panel-body">
@@ -145,7 +154,7 @@
 
     <div class="panel panel-default">
         <div class="panel-heading"><h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen"> CODEBASE 13 </a></h4>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen"> {{cbc.section13}} </a></h4>
         </div>
         <div id="collapseThirteen" class="panel-collapse collapse">
             <div class="panel-body">
@@ -156,7 +165,7 @@
 
     <div class="panel panel-default">
         <div class="panel-heading"><h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFourteen"> CODEBASE 14 </a></h4>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFourteen"> {{cbc.section14}} </a></h4>
         </div>
         <div id="collapseFourteen" class="panel-collapse collapse">
             <div class="panel-body">
@@ -167,7 +176,7 @@
 
     <div class="panel panel-default">
         <div class="panel-heading"><h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFifteen"> CODEBASE 15 </a></h4>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFifteen"> {{cbc.section15}} </a></h4>
         </div>
         <div id="collapseFifteen" class="panel-collapse collapse">
             <div class="panel-body">
@@ -175,4 +184,51 @@
             </div>
         </div>
     </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading"><h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFifteen"> {{cbc.section16}} </a></h4>
+        </div>
+        <div id="collapseFifteen" class="panel-collapse collapse">
+            <div class="panel-body">
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading"><h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFifteen"> {{cbc.section17}} </a></h4>
+        </div>
+        <div id="collapseFifteen" class="panel-collapse collapse">
+            <div class="panel-body">
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading"><h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFifteen"> {{cbc.section18}} </a></h4>
+        </div>
+        <div id="collapseFifteen" class="panel-collapse collapse">
+            <div class="panel-body">
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading"><h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFifteen"> {{cbc.section19}} </a></h4>
+        </div>
+        <div id="collapseFifteen" class="panel-collapse collapse">
+            <div class="panel-body">
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+            </div>
+        </div>
+    </div>
+
+
 </div>
