@@ -1,12 +1,13 @@
 // var config = require('./config');
 var express = require('express');
 var bodyParser = require('body-parser');
+var cors = require('cors');
 var api		= express();
 var path 	= require('path');
 var projectExe = require('./projectExecutor');
 var projects = require('./projects.json');
 
-
+api.use(cors());
 api.use(bodyParser.json());
 api.use(bodyParser.urlencoded({ extended: false }));
 //api.use(express.methodOverride());

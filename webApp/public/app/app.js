@@ -214,16 +214,16 @@ application.controller('codebaseListController', function() {
 	vm.S19Q1 = SonarQube.prjONEquestion;
 });
 
-application.controller('projectsController', ['$scope', '$routeParams',
-	function($scope, $routeParams) {
-		$scope.projectId = $routeParams.projectId;
-
-		$http.get('http://localhost:8081/execute/' + $scope.projectId)
+application.controller('projectsController', ['$scope', '$routeParams', '$http',
+	function($scope, $routeParams, $http) {
+		console.log("running");
+		$http.get('http://localhost:8081/execute/' + $routeParams.projectId)
 			.success(function(data, status, headers, config) {
 				// this callback will be called asynchronously
 				// when the response is available
 				console.log("got response");
 				console.log(data);
+				$scope.projectId = $routeParams.projectId;
 				$scope.projectOutput = data;
 			})
 			.error(function(data, status, headers, config) {
@@ -231,6 +231,7 @@ application.controller('projectsController', ['$scope', '$routeParams',
 				// or server returns response with an error status.
 				console.log("error");
 				console.log(data);
+				$scope.projectId = $routeParams.projectId;
 				$scope.projectOutput = data;
 			});
 	}
