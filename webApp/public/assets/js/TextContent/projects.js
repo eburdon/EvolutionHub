@@ -22,15 +22,15 @@ var student = {
 	question: 	"How is the growth of a software project affected by coupling?",
 	psummary: 	"SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY "
 	// runcmd: 	["ONE", "STEP TWO", ... ]
-}
+};
 
 var devin = {
 	pauthor: 	["@devin13", "@DigitalCoffee"],
 	path: 		"assets/project_sources/371student/devin13/",
 	question: 	"How does the number of progressive (new feature) and anti-regressive (maintenance) changes over time affect the number of bugs discovered?",
-	psummary: 	"SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY "
-	// runcmd: 	["ONE", "STEP TWO", ... ]
-}
+	psummary: 	"SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY ",
+	runcmd: 	["ONE", "STEP TWO"]
+};
 
 var eburdon = {
 	pauthor: 	["@eburdon"],
@@ -38,7 +38,7 @@ var eburdon = {
 	question: 	"How has Python become more powerful over time?",
 	psummary: 	"SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY "
 	// runcmd: 	["ONE", "STEP TWO", ... ]
-}
+};
 
 var gregnr = {
 	pauthor: 	["@gregnr", "@jordan-heemskerk", "@rsaujla", "@pcatkins"],
@@ -46,7 +46,7 @@ var gregnr = {
 	question: 	"Does the volume of unit tests in a project relate to the frequency of bugs?",
 	psummary: 	"SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY "
 	// runcmd: 	["ONE", "STEP TWO", ... ]
-}
+};
 
 var guand = {
 	pauthor: 	["@guand", "@paulmoon", "@Iamj1234"],
@@ -54,7 +54,7 @@ var guand = {
 	question: 	"How does the rate of feature additions change as a project grows in size?",
 	psummary: 	"SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY "
 	// runcmd: 	["ONE", "STEP TWO", ... ]
-}
+};
 
 var Hoverbear = {
 	pauthor: 	["@Hoverbear", "@fraserd"],
@@ -62,7 +62,7 @@ var Hoverbear = {
 	question: 	"Can we track when different parts of codebases undergo movement during refactoring?",
 	psummary: 	"As developers, we commonly restructure our code. This is usually done in one commit (otherwise it's sloppy). ..."
 	// runcmd: 	["ONE", "STEP TWO", ... ]
-}
+};
 
 var Jsryo = {
 	pauthor: 	["@Jsryo", "@EvanHildebrandt", "@KRollans"],
@@ -70,7 +70,7 @@ var Jsryo = {
 	question: 	"Does the file structure of the source code affect the ability for the project to evolve?",
 	psummary: 	"SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY "
 	// runcmd: 	["ONE", "STEP TWO", ... ]
-}
+};
 
 var knowelsc = {
 	pauthor: 	["@knowelsc", "@ryanmcdonald"],
@@ -78,7 +78,7 @@ var knowelsc = {
 	question: 	"What can available tools tell us about code quality?",
 	psummary: 	"SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY "
 	// runcmd: 	["ONE", "STEP TWO", ... ]
-}
+};
 
 var mrivettuvic = {
 	pauthor: 	["@mrivettuvic", "@MisterPotter"],
@@ -86,7 +86,7 @@ var mrivettuvic = {
 	question: 	"What is the relation between software development methodologies and development time per feature in a software system?",
 	psummary: 	"SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY "
 	// runcmd: 	["ONE", "STEP TWO", ... ]
-}
+};
 
 var PolloDiablo = {
 	pauthor: 	["@PolloDiablo"],
@@ -94,4 +94,5 @@ var PolloDiablo = {
 	question: 	"Do developers respond to user feedback submitted through online forums?",
 	psummary: 	"SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY "
 	// runcmd: 	["ONE", "STEP TWO", ... ]
-}
+};
+

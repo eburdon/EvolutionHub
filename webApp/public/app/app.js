@@ -213,3 +213,25 @@ application.controller('codebaseListController', function() {
 	vm.section19 = "SonarQube";
 	vm.S19Q1 = SonarQube.prjONEquestion;
 });
+
+application.controller('projectsController', ['$scope', '$routeParams',
+	function($scope, $routeParams) {
+		$scope.projectId = $routeParams.projectId;
+
+		$http.get('http://localhost:8081/execute/' + $scope.projectId)
+			.success(function(data, status, headers, config) {
+				// this callback will be called asynchronously
+				// when the response is available
+				console.log("got response");
+				console.log(data);
+				$scope.projectOutput = data;
+			})
+			.error(function(data, status, headers, config) {
+				// called asynchronously if an error occurs
+				// or server returns response with an error status.
+				console.log("error");
+				console.log(data);
+				$scope.projectOutput = data;
+			});
+	}
+]);
