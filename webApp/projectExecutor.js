@@ -3,16 +3,16 @@ var child = require('child_process');
 var path = require('path');
 var q = require('q');
 
-function executeCommand(command, argumentArray, input) {
-    var projectsPathPrefix = 'assets/project_sources/';
+function executeCommand(cwd, command, argumentArray, input) {
     var deferred = q.defer();
     var cmd = command;
     var args = argumentArray;
+    var opts = {cwd: cwd};
 
     var projectOutput = "";
     var projectErr = "";
 
-    var kinderProcess = child.spawn(cmd, args);
+    var kinderProcess = child.spawn(cmd, args, opts);
 
     if(input) {
         console.log("writing input data to standard input");
@@ -44,7 +44,7 @@ function executeCommand(command, argumentArray, input) {
 
     kinderProcess.on('error', function (error) {
         console.log("error spawning child process:", error);
-        deferred.reject({msg: 'transit (' + cmd + ') executable failed to run.', code: error})
+        deferred.reject({msg: 'command (' + cmd + ') executable failed to run.', code: error})
     });
     return deferred.promise;
 }
@@ -58,8 +58,9 @@ function executeCommand(command, argumentArray, input) {
  * */
 
 function executeProject(basePath, commandList) {
+    var deferred = q.defer();
     var pipeToNext = false;
-    var output;
+    //var output;
     var chartData = [];
     commandList.forEach(function(item) {
         if(item.directive === 'pipeToNext') {
@@ -67,13 +68,16 @@ function executeProject(basePath, commandList) {
         } else {
             pipeToNext = false;
         }
-        output = executeCommand(path.join(basePath, item.command), item.arguments, pipeToNext ? output : null )
+        executeCommand(item.command, item.arguments, pipeToNext ? output : null, basePath )
+            .then(function(output) {
+                if(item.directive === 'chartOutput') {
+                    chartData.push(output);
+                }
+            });
 
-        if(item.directive === 'chartOutput') {
-            chartData.push(output);
-        }
+
     });
-    return chartData;
+    return deferred;
 }
 
 exports.executeCommand = executeCommand;

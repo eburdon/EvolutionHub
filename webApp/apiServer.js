@@ -26,12 +26,13 @@ api.get('/execute/:projectID', function(req, res, next) {
     if(project === "2") {
         projectInfo = projects.devin;
         console.log("executing project:", projectInfo);
-        output = projectExe.executeProject(projectInfo.path, projectInfo.runcmd);
-
+        projectExe.executeCommand(projectInfo.path, projectInfo.runcmd[0].command, projectInfo.runcmd[0].arguments)
+            .then(function(output) {
+                res.send({project: project, output: output});
+            }, function failure(data) {
+                res.send({project: project, output: data});
+            });
     }
-
-    res.send({project: project, output: output});
-    next();
 });
 
 // Set public folder to serve public assets; will START to look here for JS, CSS, ETC. files...
