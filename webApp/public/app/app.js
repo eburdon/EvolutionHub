@@ -151,3 +151,10 @@ application.controller('codebaseListController', function() {
 	var vm = this;
 	vm.message = 'Codebase stuff here!';
 });
+
+application.controller('projectsController', ['$scope', '$routeParams',
+	function($scope, $routeParams) {
+		$scope.projectId = $routeParams.projectId;
+		console.log("where does this run? -- answer: client side.");
+	}
+]);

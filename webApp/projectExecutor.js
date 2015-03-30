@@ -1,5 +1,6 @@
 
 var child = require('child_process');
+var path = require('path');
 var q = require('q');
 
 function executeCommand(command, argumentArray, input) {
@@ -56,7 +57,7 @@ function executeCommand(command, argumentArray, input) {
  * }
  * */
 
-function executeProject(commandList) {
+function executeProject(basePath, commandList) {
     var pipeToNext = false;
     var output;
     var chartData = [];
@@ -66,7 +67,7 @@ function executeProject(commandList) {
         } else {
             pipeToNext = false;
         }
-        output = executeCommand(item.command, item.arguments, pipeToNext ? output : null )
+        output = executeCommand(path.join(basePath, item.command), item.arguments, pipeToNext ? output : null )
 
         if(item.directive === 'chartOutput') {
             chartData.push(output);
@@ -75,5 +76,5 @@ function executeProject(commandList) {
     return chartData;
 }
 
-module.exports = executeCommand;
-module.exports = executeProject;
+exports.executeCommand = executeCommand;
+exports.executeProject = executeProject;
