@@ -73,7 +73,7 @@ angular.module('routerRoutes', [
 		// CODEBASE route
 		.when('/codebaseList', {
 			templateUrl : 'app/views/pages/codebaseList.html',
-			controller : 'codebaseController',
+			controller : 'codebaseListController',
 			controllerAs: 'cbc'
 		})
 
