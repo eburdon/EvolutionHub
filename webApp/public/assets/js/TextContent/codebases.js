@@ -5,26 +5,28 @@
 */
 var Reddit  = {
 	/* WE CAN REFERENCE *ALL* PROPERTIES OF A PROJECT e.g... */
-	prjPath1: PolloDiablo.path,
-	prjQuestion1: PolloDiablo.question
+	test: PolloDiablo.path,
+	testy: PolloDiablo.question
 }
 
 
 var JQueryMobile = {
-	prjQ1: Jsryo.question
+	test: Jsryo.question
 }
 
 var JQuery   = {
-	prjQ1: Jsryo.question.
-
-	project2: knowlesc 
+	test:  Jsryo.question,
+	// testy: knowlesc.question
 }
+
 
 var Bootstrap = { 
-	prjQ1: Jsryo.question,
-	prjQ2: devin.question, 
-	prjQ1: guand.question 
+	prjONEquestion: Jsryo.question,
+	prjTWOquestion: devin.question,
+	prjTHREEquestion: guand.question 
 }
+
+/*
 
 var Rails    = {
 	prjctQstn1: Jsryo.question,
@@ -88,3 +90,4 @@ var ProjectForge = {
 var SonarQube = { 
 	project1: mrivettuvic 
 }
+*/

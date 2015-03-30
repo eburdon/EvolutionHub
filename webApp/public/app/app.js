@@ -152,12 +152,19 @@ application.controller('codebaseListController', function() {
 	vm.message = 'Codebase stuff here!';
 
 	vm.section1  = "Reddit";
+	// vm.test = Reddit.testy;
 
-	vm.section2  = "JQueryMobile";
+	vm.section2  = "jQuery Mobile";
+	// vm.test = JQueryMobile.test;
 
-	vm.section3  = "JQuery";
+	vm.section3  = "jQuery";
+	// vm.test = JQuery.test;
 
 	vm.section4  = "Bootstrap";
+	vm.S4Q1 = Bootstrap.prjONEquestion;
+	vm.S4Q2 = Bootstrap.prjTWOquestion;
+	vm.S4Q3 = Bootstrap.prjTHREEquestion;
+
 	// vm.S4Q1 = Reddit.prjQ;
 	/* vm.s4.question2 = project2.question;
 	vm.s4.question3 = project3.question;*/
@@ -170,21 +177,21 @@ application.controller('codebaseListController', function() {
 
 	vm.section8  = "Flask";
 
-	vm.section9  = "NodeJS";
+	vm.section9  = "Node.js";
 
 	vm.section10 = "Python";
 
-	vm.section11 = "PixiJS";
+	vm.section11 = "Pixi.js";
 
-	vm.section12 = "AngularJS";
+	vm.section12 = "Angular.js";
 
-	vm.section13 = "MelonJS";
+	vm.section13 = "Melon.js";
 
-	vm.section14 = "Backbone";
+	vm.section14 = "Backbone.js";
 
 	vm.section15 = "Homebrew";
 
-	vm.section16 = "IOJS";
+	vm.section16 = "io.js";
 
 	vm.section17 = "Marmotta";
 
