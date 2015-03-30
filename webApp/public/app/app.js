@@ -152,50 +152,64 @@ application.controller('codebaseListController', function() {
 	vm.message = 'Codebase stuff here!';
 
 	vm.section1  = "Reddit";
-	// vm.test = Reddit.testy;
+	vm.S1Q1 = Reddit.prjONEquestion;
 
 	vm.section2  = "jQuery Mobile";
-	// vm.test = JQueryMobile.test;
+	vm.S2Q1 = JQueryMobile.prjONEquestion;
 
 	vm.section3  = "jQuery";
-	// vm.test = JQuery.test;
+	vm.S3Q1 = JQuery.prjONEquestion;
+	vm.S3Q2 = JQuery.prjTWOquestion;
 
 	vm.section4  = "Bootstrap";
 	vm.S4Q1 = Bootstrap.prjONEquestion;
 	vm.S4Q2 = Bootstrap.prjTWOquestion;
 	vm.S4Q3 = Bootstrap.prjTHREEquestion;
 
-	// vm.S4Q1 = Reddit.prjQ;
-	/* vm.s4.question2 = project2.question;
-	vm.s4.question3 = project3.question;*/
-
 	vm.section5  = "Rails";
+	vm.S5Q1 = Rails.prjONEquestion;
+	vm.S5Q2 = Rails.prjTWOquestion;
 
 	vm.section6  = "Django";
+	vm.S6Q1 = Django.prjONEquestion;
 
 	vm.section7  = "Pyramid";
+	vm.S7Q1 = Pyramid.prjONEquestion;
 
 	vm.section8  = "Flask";
+	vm.S8Q1 = Flask.prjONEquestion;
 
 	vm.section9  = "Node.js";
+	vm.S9Q1 = NodeJS.prjONEquestion;
 
 	vm.section10 = "Python";
+	vm.S10Q1 = Python.prjONEquestion;
 
 	vm.section11 = "Pixi.js";
+	vm.S11Q1 = PixiJS.prjONEquestion;
 
 	vm.section12 = "Angular.js";
+	vm.S12Q1 = AngularJS.prjONEquestion;
+	vm.S12Q2 = AngularJS.prjTWOquestion;
 
 	vm.section13 = "Melon.js";
+	vm.S13Q1 = MelonJS.prjONEquestion;
 
 	vm.section14 = "Backbone.js";
+	vm.S14Q1 = Backbone.prjONEquestion;
 
 	vm.section15 = "Homebrew";
+	vm.S15Q1 = Homebrew.prjONEquestion;
 
 	vm.section16 = "io.js";
+	vm.S16Q1 = IOJS.prjONEquestion;
 
 	vm.section17 = "Marmotta";
+	vm.S17Q1 = Marmotta.prjONEquestion;
 
 	vm.section18 = "ProjectForge";
+	vm.S18Q1 = ProjectForge.prjONEquestion;
 
 	vm.section19 = "SonarQube";
+	vm.S19Q1 = SonarQube.prjONEquestion;
 });

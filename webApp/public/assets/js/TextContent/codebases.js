@@ -5,89 +5,91 @@
 */
 var Reddit  = {
 	/* WE CAN REFERENCE *ALL* PROPERTIES OF A PROJECT e.g... */
-	test: PolloDiablo.path,
-	testy: PolloDiablo.question
+	prjONEquestion: PolloDiablo.question,
+	prjONEpath: PolloDiablo.path,
 }
 
 
 var JQueryMobile = {
-	test: Jsryo.question
+	prjONEquestion: Jsryo.question
 }
 
 var JQuery   = {
-	test:  Jsryo.question,
-	// testy: knowlesc.question
+	prjONEquestion: Jsryo.question,
+
+	prjTWOquestion: knowelsc.question
 }
 
 
 var Bootstrap = { 
 	prjONEquestion: Jsryo.question,
+
 	prjTWOquestion: devin.question,
+
 	prjTHREEquestion: guand.question 
 }
 
-/*
 
 var Rails    = {
-	prjctQstn1: Jsryo.question,
+	prjONEquestion: Jsryo.question,
 
-	project2: devin 
+	prjTWOquestion: devin.question
 }
 
 var Django   = { 
-	project1: student 
+	prjONEquestion: student.question
 }
 
 var Pyramid  = { 
-	project1: student 
+	prjONEquestion: student.question
 }
 
 var Flask    = { 
-	project1: student 
+	prjONEquestion: student.question
 }
 
 var NodeJS   = { 
-	project2: devin 
+	prjONEquestion: devin.question
 }
 
 var Python   = { 
-	project1: eburdon 
+	prjONEquestion: eburdon.question
 }
 
 var PixiJS   = { 
-	project1: gregnr 
+	prjONEquestion: gregnr.question
 }
 
 var AngularJS = { 
-	project1: gregnr, 
-	project2: knowlesc 
+	prjONEquestion: gregnr.question, 
+
+	prjTWOquestion: knowelsc.question
 }
 
 var MelonJS  = {
-	project1: gregnr 
+	prjONEquestion: gregnr.question 
 }
 
 var Backbone = { 
-	project1: guand 
+	prjONEquestion: guand.question
 }
 
 var Homebrew = { 
-	project1: guand 
+	prjONEquestion: guand.question,
 }
 
 var IOJS     = { 
-	project1: knowlesc 
+	prjONEquestion: knowelsc.question
 }
 
 var Marmotta = { 
-	project1: mrivettuvic 
+	prjONEquestion: mrivettuvic.question
 }
 
 var ProjectForge = { 
-	project1: mrivettuvic 
+	prjONEquestion: mrivettuvic.question
 }
 
 var SonarQube = { 
-	project1: mrivettuvic 
+	prjONEquestion: mrivettuvic.question
 }
-*/
