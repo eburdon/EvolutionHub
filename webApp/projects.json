@@ -1,0 +1,91 @@
+{
+    "student": {
+        "pauthor": ["@371student", "@chrisjcook", "@sarahannnicholson"],
+        "path": "assets/project_sources/371student/",
+        "question": "How is the growth of a software project affected by coupling?",
+        "psummary": "SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY ",
+        "runcmd": 	["ONE", "STEP TWO", "..." ]
+    },
+
+    "devin": {
+        "pauthor": ["@devin13", "@DigitalCoffee"],
+        "path": "webApp/public/assets/project_sources/devin13/SENG371-Devin-and-Andrew/",
+        "question": "How does the number of progressive (new feature) and anti-regressive (maintenance) changes over time affect the number of bugs discovered?",
+        "psummary": "SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY ",
+        "runcmd": [{"command": "python", "arguments": [
+            "bugCounter.py",
+            "-u", "",
+            "-p", "",
+            "-a", "2015",
+            "-b", "1",
+            "-c", "2015",
+            "-d", "3",
+            "-o", "Hoverbear",
+            "-r", "transit"
+        ], "directive": "chartOutput"}]
+    },
+
+    "eburdon": {
+        "pauthor": ["@eburdon"],
+        "path": "assets/project_sources/eburdon/",
+        "question": "How has Python become more powerful over time?",
+        "psummary": "SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY ",
+        "runcmd": 	["ONE", "STEP TWO", "..." ]
+    },
+
+    "gregnr": {
+        "pauthor": ["@gregnr", "@jordan-heemskerk", "@rsaujla", "@pcatkins"],
+        "path": "assets/project_sources/gregnr/",
+        "question": "Does the volume of unit tests in a project relate to the frequency of bugs?",
+        "psummary": "SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY ",
+        "runcmd": 	["ONE", "STEP TWO", "..." ]
+    },
+
+    "guand": {
+        "pauthor": ["@guand", "@paulmoon", "@Iamj1234"],
+        "path": "assets/project_sources/guand/",
+        "question": "How does the rate of feature additions change as a project grows in size?",
+        "psummary": "SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY ",
+        "runcmd": 	["ONE", "STEP TWO", "..." ]
+    },
+
+    "Hoverbear": {
+        "pauthor": ["@Hoverbear", "@fraserd"],
+        "path": "assets/project_sources/Hoverbear/",
+        "question": "Can we track when different parts of codebases undergo movement during refactoring?",
+        "psummary": "As developers, we commonly restructure our code. This is usually done in one commit (otherwise it's sloppy). ...",
+        "runcmd": 	["ONE", "STEP TWO", "..." ]
+    },
+
+    "Jsryo": {
+        "pauthor": ["@Jsryo", "@EvanHildebrandt", "@KRollans"],
+        "path": "assets/project_sources/Jsryo/",
+        "question": "Does the file structure of the source code affect the ability for the project to evolve?",
+        "psummary": "SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY ",
+        "runcmd": 	["ONE", "STEP TWO", "..." ]
+    },
+
+    "knowelsc": {
+        "pauthor": ["@knowelsc", "@ryanmcdonald"],
+        "path": "assets/project_sources/knowelsc/",
+        "question": "What can available tools tell us about code quality?",
+        "psummary": "SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY ",
+        "runcmd": 	["ONE", "STEP TWO", "..." ]
+    },
+
+    "mrivettuvic": {
+        "pauthor": ["@mrivettuvic", "@MisterPotter"],
+        "path": "assets/project_sources/mrivettuvic/",
+        "question": "What is the relation between software development methodologies and development time per feature in a software system?",
+        "psummary": "SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY ",
+        "runcmd": 	["ONE", "STEP TWO", "..." ]
+    },
+
+    "PolloDiablo": {
+        "pauthor": ["@PolloDiablo"],
+        "path": "assets/project_sources/PolloDiablo/",
+        "question": "Do developers respond to user feedback submitted through online forums?",
+        "psummary": "SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY ",
+        "runcmd": 	["ONE", "STEP TWO", "..." ]
+    }
+}

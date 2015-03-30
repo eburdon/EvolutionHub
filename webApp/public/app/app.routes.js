@@ -75,6 +75,13 @@ angular.module('routerRoutes', [
 			templateUrl : 'app/views/pages/codebaseList.html',
 			controller : 'codebaseListController',
 			controllerAs: 'cbc'
+		})
+
+		// projects
+		.when('/projects/:projectId', {
+			templateUrl : 'app/views/pages/projectsPartial.html',
+			controller : 'projectsController',
+			controllerAs: 'pControl'
 		});
 
 	// Set our app to have pretty URLs
