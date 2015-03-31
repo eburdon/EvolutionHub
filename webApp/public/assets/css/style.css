@@ -1,10 +1,27 @@
-body { padding-top: 50px;}
+/* --------- Base styling (all themes) --------*/
 
-footer {padding-top: 50px;}
+body { 
+	padding-top: 50px;
+	
+	font-family: "Oswald", serif;
+	line-height: 1.8em; /* Line spacing*/
+}
 
-/* --------- Entry/Exit Animations ------------ */
+footer {
+	padding-top: 50px;
+}
 
-#content-views {position: relative;}
+.jumbotron h1{ 
+	color:black; 
+	font-family: "Josefin Slab", serif;
+}
+
+/* --------- Page injections --------*/
+#content-views {
+	position: relative;
+}
+
+/* --------- Entry/Exit Animations --------- */
 
 .ng-enter, .ng-leave {width: 100%; position: absolute;}
 

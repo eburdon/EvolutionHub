@@ -15,13 +15,19 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css">
+	<!-- Loading GOOGLE FONTS for more awesome stuff -->
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin Slab">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald">
 	<!-- My styles -->
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/accordionStyle.css">
-
-	<style> 
-		body{ padding-top: 50px; } 
-	</style>
+	<link rel="stylesheet" href="assets/css/goldfishStyle.css" id="pagestyle"> <!-- Default color scheme; can change in footer -->
+	<!-- <link rel="stylesheet" href="assets/css/alexandraStyle.css" id="pagestyle"> -->
+	<script>
+	function swapStyleSheet(sheet){
+		document.getElementById('pagestyle').setAttribute('href', sheet);
+	}
+	</script>
 
 	<!-- ==== JS ==== -->
 	<!-- Load angular routing feature via CDN  + animation spells-->
@@ -35,7 +41,7 @@
 	<script src="app/app.routes.js"></script>	<!-- Configures (injected) routes-->
 	<script src="app/app.js"></script> 			<!-- Defines all CONTROLLERS -->
 
-	<!-- TEXT CONTENT FILES -->
+	<!-- ==== TEXT CONTENT FILES ==== -->
 	<script src="assets/js/TextContent/softLawContent.js"></script>
 	<script src="assets/js/TextContent/benchmarkContent.js"></script>
 	<script src="assets/js/TextContent/educationLinks.js"></script>
@@ -95,12 +101,22 @@
                     | <a href="/about">About</a>
                     | <a href="/contact">Contact</a>
                 </p>
+
+                <p>
+                <form>
+                	<!-- CHANGE COLOR SCHEME OF SITE -->
+                	<input type="radio" name="Theme" value="Theme 2" checked onclick="swapStyleSheet('assets/css/goldfishStyle.css')">
+                	<small>Goldfish Theme</small><br>
+                	<input type="radio" name="Theme" value="Theme 1" onclick="swapStyleSheet('assets/css/alexandraStyle.css')">
+                	<small>Stone Blue Theme</small>
+                </form>
+                <p>
             </div>
 
             <div class="col-md-7" id="mid_footer" style="box-sizing: border-box;">
                 <p>
                 <b>Disclaimer:</b>
-                This website and application is a deliverable for the University of Victoria's SEng 371 course conducted January 2015 and is not affilitated with any professional development company.
+                This web application is our final deliverable for the University of Victoria's Seng 371 course as offered in January 2015 and is not affilitated with any professional development company.
                 </p>
             </div>
 

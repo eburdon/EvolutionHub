@@ -1,0 +1,21 @@
+/*
+http://www.dtelepathy.com/blog/inspiration/beautiful-color-palettes-for-your-next-web-project
+no. 43 & 45
+ */
+
+body {
+	background-color: #d2dee6;
+}
+
+.jumbotron {
+	background-color: #6991AC;
+}
+
+.jumbotron h1{ 
+	color:black; 
+	font-family: "Josefin Slab", serif;
+}
+
+body h1 {
+	color: #EC6C54;
+}

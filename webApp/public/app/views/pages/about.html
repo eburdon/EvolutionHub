@@ -1,17 +1,46 @@
 <div ng-controller="aboutController as about">
 <div class="jumbotron text-center">
-	<h1>ABOUT Page</h1>
-		
-	<p>{{ about.message }}</p>
+	<p>Hey.<br>We need to talk.</p>
+	<h1>What the heck is this app about?</h1>
+</div>
+	
+<div class="text">
+	<h1>About this project</h1>
+	
+	<p>This application is our final deliverable for project 2 of UVic's Software Evolution Course. Cool, right?!</p>
+
+	<p>Project 1 was to analyze different open-source codebases and answer questions related to evolution such as "Do software development methods, such as agile or waterfall, affect the long-term evolution of a project?" or "Does the amount of funding affect the number of features in a project?"</p>
+
+	<p>This application hopes to successfully bring all of the student-created tools into one place. In our Research Center, you can execute the tool server-side, and have the results displayed right in your browser! In the Edcuation Center, you can learn all about the laws of software evolution, attempt to evaluate where your project is the evolutionary process, or follow a couple of cool links for more information.
+
+	<p>What do you think? Read more about this project in its <a target="_blank" href="http://github.com/eburdon/EvolutionHub">GitHub repository.</a></p>
+	</div>
+
+<div class="row" style="padding-left:20px">
+	<h1>About the developers</h1>
+	<p>Software Engineering for the win!</p>
+	<div class="col-md-6">
+	<h3>Erika Burdon</h3>
+	<p>Erika is a fourth year Software Engineering student born and raised on Vancouver Island! An island girl at heart, Erika loves to go camping (rain or shine!), read up on new technology, or just fiddle around with new programming concepts, ideas, and languages. She knows American Sign Language, and German. <br>
+	<b>Fun Fact: </b> She's deaf, so talk loud. Or email her. Whichever you prefer.</p>
+	<a href="https://www.linkedin.com/in/eburdon"><i class="fa fa-linkedin"></i> LinkedIn</a><br>
+	<a href="https://github.com/eburdon"><i class="fa fa-github"></i> GitHub</a><br>
+	</div>
+
+	<div class="col-md-6">
+	<h3>Fraser DeLisle</h3>
+	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. </p>
+	</div>
+	<br>
 </div>
 
-<!-- This is testing that angular can detect HTML events == FRONT END RESPONSE -->
-<button ng-click="fooAlert()">FRONT-END Function execution (browser alert)</button>
-
-<br><br>
-
-<!-- I need to somehow pass my html event to the server to take action == BACK END RESPONSE -->
-<button ng-click="fooConsole()">BACK-END Function execution (console log message)</button>
+<div class="text">
+	<h1>Future work</h1>
+	<p>
+	<ul>
+		<li>Add more projects to the research center</li>
+		<li>Keep adding content to the education center</li>
+		<li>Better application styling/design</li>
+	</ul>
+	</p>
 </div>
-
-<!-- FUTURE TRIES: try event emitter? Try socket.io?? -->

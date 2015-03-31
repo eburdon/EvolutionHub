@@ -1,0 +1,17 @@
+/*
+http://www.dtelepathy.com/blog/inspiration/beautiful-color-palettes-for-your-next-web-project
+
+no. 1 
+
+|Blue    |Lighter blue |white-blue |faint orange |Deep orange |
+|#69d2e7 |#a7dbdb      |#e0e4cc    |#f38630      |#fa6900     |
+
+*/
+
+body {
+	background-color: #a7dbdb;
+}
+
+.jumbotron {
+	background-color: #f38630;
+}
