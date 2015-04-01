@@ -88,10 +88,36 @@ application.controller('softwareLawsController', function() {
 	var vm = this;
 	vm.message = 'Software laws here!';
 
-	// file source name
+	// softLawContent.js
+	vm.mainTitle  = softLawContent.mainTitle;
 	vm.paragraph1 = softLawContent.paragraph1;
 	vm.paragraph2 = softLawContent.paragraph2;
 	vm.paragraph3 = softLawContent.paragraph3;
+	vm.paragraph4 = softLawContent.paragraph4;
+
+	vm.law1title = softLawContent.law1title;
+	vm.law1text  = softLawContent.law1text;
+
+	vm.law2title = softLawContent.law2title;
+	vm.law2text  = softLawContent.law2text;
+
+	vm.law3title = softLawContent.law3title;
+	vm.law3text  = softLawContent.law3text;
+
+	vm.law4title = softLawContent.law4title;
+	vm.law4text  = softLawContent.law4text;
+
+	vm.law5title = softLawContent.law5title;
+	vm.law5text  = softLawContent.law5text;
+
+	vm.law6title = softLawContent.law6title;
+	vm.law6text  = softLawContent.law6text;
+
+	vm.law7title = softLawContent.law7title;
+	vm.law7text  = softLawContent.law7text;
+
+	vm.law8title = softLawContent.law8title;
+	vm.law8text  = softLawContent.law8text;
 })
 
 // BENCHMARKS
