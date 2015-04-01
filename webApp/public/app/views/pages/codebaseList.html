@@ -1,12 +1,12 @@
 <div class="jumbotron text-center" ng-controller="codebaseListController as cbc">
-	<h1>Codebase list!</h1>
+	<h1>Evolving Codebases</h1>
 </div>
 
 
 <div class="panel-group" id="accordion">
 
     <p>
-        This is a list of codebases studied in Project 1. Click a link to expand information about what you can do with it (available tools). These codebases aren't listed in any particular order.<br>
+        This is a list of codebases studied in Project 1. Click a link to expand information about what you can do with it (available tools). These codebases aren't listed in any particular order. For more information about the tools, either follow the link to visit the developer repository, or navigate to "Research Center > QUESTION" and expand the correct question for a short summary.<br>
     </p>
 
     <div class="panel panel-default">
@@ -22,7 +22,11 @@
 
                 <p><b>What can you ask about Reddit?</b>
                 <ul>
-                    <li>{{cbc.S1Q1}}</li>
+                    <li>{{cbc.S1Q1}}
+                    <br>
+                    <button id="runButton">Run Project</button>
+                    <a target="_blank" ng-href="https://github.com/PolloDiablo/SENG-371-Project-1"><button>Visit Repository</button></a>
+                    </li>
                 </ul>
                 </p>
             </div>
@@ -43,7 +47,11 @@
 
                 <p><b>What can you ask about jQuery Mobile?</b>
                 <ul>
-                    <li>{{cbc.S2Q1}}</li>
+                    <li>{{cbc.S2Q1}}
+                    <br>
+                    <button id="runButton">Run Project</button>
+                    <a target="_blank" ng-href="https://github.com/Jsyro/seng371"><button>Visit Repository</button></a>
+                    </li>
                 </ul>
                 </p>
             </div>
@@ -64,8 +72,15 @@
 
                 <p><b>What can you ask about jQuery?</b>
                 <ul>
-                    <li>{{cbc.S3Q1}}</li>
-                    <li>{{cbc.S3Q2}}</li>
+                    <li>{{cbc.S3Q1}}
+                    <br>
+                    <button id="runButton">Run Project</button>
+                    <a target="_blank" ng-href="https://github.com/Jsyro/seng371"><button>Visit Repository</button></a>
+                    </li>
+                    <li>{{cbc.S3Q2}}
+                    <br>
+                    <a target="_blank" ng-href="https://github.com/knowlesc/seng371project1"><button>Visit Repository</button></a>
+                    </li>
                 </ul>
                 </p>
             </div>
@@ -85,9 +100,21 @@
 
                 <p><b>What can you ask about Bootstrap?</b>
                 <ul>
-                    <li>{{cbc.S4Q1}}</li>
-                    <li>{{cbc.S4Q2}}</li>
-                    <li>{{cbc.S4Q3}}</li>
+                    <li>{{cbc.S4Q1}}
+                    <br>
+                    <button id="runButton">Run Project</button>
+                    <a target="_blank" ng-href="https://github.com/Jsyro/seng371"><button>Visit Repository</button></a>
+                    </li>
+                    <li>{{cbc.S4Q2}}
+                    <br>
+                    <button id="runButton">Run Project</button>
+                    <a target="_blank" ng-href="https://github.com/devinc13/SENG371-Devin-and-Andrew"><button>Visit Repository</button></a>
+                    </li>
+                    <li>{{cbc.S4Q3}}
+                    <br>
+                    <button id="runButton">Run Project</button>
+                    <a target="_blank" ng-href="https://github.com/guand/seng371-project1"><button>Visit Repository</button></a>
+                    </li>
                 </ul>
                 </p>
             </div>
@@ -107,7 +134,11 @@
 
                 <p><b>What can you ask about Rails?</b>
                 <ul>
-                    <li>{{cbc.S5Q1}}</li>
+                    <li>{{cbc.S5Q1}}
+                    <br>
+                    <button id="runButton">Run Project</button>
+                    <a target="_blank" ng-href="https://github.com/Jsyro/seng371"><button>Visit Repository</button></a>
+                    </li>
                 </ul>
                 </p>
             </div>
@@ -127,7 +158,11 @@
 
                 <p><b>What can you ask about Django?</b>
                 <ul>
-                    <li>{{cbc.S6Q1}}</li>
+                    <li>{{cbc.S6Q1}}
+                    <br>
+                    <button id="runButton">Run Project</button>
+                    <a target="_blank" ng-href="https://github.com/371student/SENG371Project"><button>Visit Repository</button></a>
+                    </li>
                 </ul>
                 </p>
             </div>
@@ -147,7 +182,11 @@
 
                 <p><b>What can you ask about Pyramid?</b>
                 <ul>
-                    <li>{{cbc.S7Q1}}</li>
+                    <li>{{cbc.S7Q1}}
+                    <br>
+                    <button id="runButton">Run Project</button>
+                    <a target="_blank" ng-href="https://github.com/371student/SENG371Project"><button>Visit Repository</button></a>
+                    </li>
                 </ul>
                 </p>
             </div>
@@ -167,7 +206,11 @@
 
                 <p><b>What can you ask about Flask?</b>
                 <ul>
-                    <li>{{cbc.S8Q1}}</li>
+                    <li>{{cbc.S8Q1}}
+                    <br>
+                    <button id="runButton">Run Project</button>
+                    <a target="_blank" ng-href="https://github.com/371student/SENG371Project"><button>Visit Repository</button></a>
+                    </li>
                 </ul>
                 </p>
             </div>
@@ -187,7 +230,11 @@
 
                 <p><b>What can you ask about Node.js?</b>
                 <ul>
-                    <li>{{cbc.S9Q1}}</li>
+                    <li>{{cbc.S9Q1}}
+                    <br>
+                    <button id="runButton">Run Project</button>
+                    <a target="_blank" ng-href="https://github.com/devinc13/SENG371-Devin-and-Andrew"><button>Visit Repository</button></a>
+                    </li>
                 </ul>
                 </p>
             </div>
@@ -207,7 +254,10 @@
 
                 <p><b>What can you ask about Python?</b>
                 <ul>
-                    <li>{{cbc.S10Q1}}</li>
+                    <li>{{cbc.S10Q1}}
+                    <br>
+                    <a target="_blank" ng-href="https://github.com/eburdon/Seng371-SoftwareEvolutionClassProject"><button>Visit Repository</button></a>
+                    </li>
                 </ul>
                 </p>
             </div>
@@ -227,7 +277,11 @@
 
                 <p><b>What can you ask about Pixi.js?</b>
                 <ul>
-                    <li>{{cbc.S11Q1}}</li>
+                    <li>{{cbc.S11Q1}}
+                    <br>
+                    <button id="runButton">Run Project</button>
+                    <a target="_blank" ng-href="https://github.com/gregnr/SoftwareEvolutionAnalysis"><button>Visit Repository</button></a>
+                    </li>
                 </ul>
                 </p>
             </div>
@@ -247,8 +301,15 @@
 
                 <p><b>What can you ask about Angular.js?</b>
                 <ul>
-                    <li>{{cbc.S12Q1}}</li>
-                    <li>{{cbc.S12Q2}}</li>
+                    <li>{{cbc.S12Q1}}
+                    <br>
+                    <button id="runButton">Run Project</button>
+                    <a target="_blank" ng-href="https://github.com/gregnr/SoftwareEvolutionAnalysis"><button>Visit Repository</button></a>
+                    </li>
+                    <li>{{cbc.S12Q2}}
+                    <br>
+                    <a target="_blank" ng-href="https://github.com/knowlesc/seng371project1"><button>Visit Repository</button></a>
+                    </li>
                 </ul>
                 </p>
             </div>
@@ -268,7 +329,11 @@
 
                 <p><b>What can you ask about Melon.js?</b>
                 <ul>
-                    <li>{{cbc.S13Q1}}</li>
+                    <li>{{cbc.S13Q1}}
+                    <br>
+                    <button id="runButton">Run Project</button>
+                    <a target="_blank" ng-href="https://github.com/gregnr/SoftwareEvolutionAnalysis"><button>Visit Repository</button></a>
+                    </li>
                 </ul>
                 </p>
             </div>
@@ -288,7 +353,11 @@
 
                 <p><b>What can you ask about Backbone.js?</b>
                 <ul>
-                    <li>{{cbc.S14Q1}}</li>
+                    <li>{{cbc.S14Q1}}
+                    <br>
+                    <button id="runButton">Run Project</button>
+                    <a target="_blank" ng-href="https://github.com/guand/seng371-project1"><button>Visit Repository</button></a>
+                    </li>
                 </ul>
                 </p>
             </div>
@@ -307,7 +376,11 @@
 
                 <p><b>What can you ask about Homebrew?</b>
                 <ul>
-                    <li>{{cbc.S15Q1}}</li>
+                    <li>{{cbc.S15Q1}}
+                    <br>
+                    <button id="runButton">Run Project</button>
+                    <a target="_blank" ng-href="https://github.com/guand/seng371-project1"><button>Visit Repository</button></a>
+                    </li>
                 </ul>
                 </p>
             </div>
@@ -327,7 +400,11 @@
 
                 <p><b>What can you ask about io.js?</b>
                 <ul>
-                    <li>{{cbc.S16Q1}}</li>
+                    <li>{{cbc.S16Q1}}
+                    <br>
+                    <button id="runButton">Run Project</button>
+                    <a target="_blank" ng-href="https://github.com/gregnr/SoftwareEvolutionAnalysis"><button>Visit Repository</button></a>
+                    </li>
                 </ul>
                 </p>
             </div>
@@ -348,7 +425,11 @@
 
                 <p><b>What can you ask about Marmotta?</b>
                 <ul>
-                    <li>{{cbc.S17Q1}}</li>
+                    <li>{{cbc.S17Q1}}
+                    <br>
+                    <button id="runButton">Run Project</button>
+                    <a target="_blank" ng-href="https://github.com/mrivettuvic/SENG-371"><button>Visit Repository</button></a>
+                    </li>
                 </ul>
                 </p>
             </div>
@@ -367,7 +448,11 @@
 
                 <p><b>What can you ask about ProjectForge?</b>
                 <ul>
-                    <li>{{cbc.S18Q1}}</li>
+                    <li>{{cbc.S18Q1}}
+                    <br>
+                    <button id="runButton">Run Project</button>
+                    <a target="_blank" ng-href="https://github.com/mrivettuvic/SENG-371"><button>Visit Repository</button></a>
+                    </li>
                 </ul>
                 </p>
             </div>
@@ -387,7 +472,11 @@
 
                 <p><b>What can you ask about SonarQube?</b>
                 <ul>
-                    <li>{{cbc.S19Q1}}</li>
+                    <li>{{cbc.S19Q1}}
+                    <br>
+                    <button id="runButton">Run Project</button>
+                    <a target="_blank" ng-href="https://github.com/mrivettuvic/SENG-371"><button>Visit Repository</button></a>
+                    </li>
                 </ul>
                 </p>
             </div>
