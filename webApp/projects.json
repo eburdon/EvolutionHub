@@ -12,17 +12,20 @@
         "path": "webApp/public/assets/project_sources/devin13/SENG371-Devin-and-Andrew/",
         "question": "How does the number of progressive (new feature) and anti-regressive (maintenance) changes over time affect the number of bugs discovered?",
         "psummary": "SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY SUMMARY ",
-        "runcmd": [{"command": "python", "arguments": [
-            "bugCounter.py",
-            "-u", "",
-            "-p", "",
-            "-a", "2015",
-            "-b", "1",
-            "-c", "2015",
-            "-d", "3",
-            "-o", "Hoverbear",
-            "-r", "transit"
-        ], "directive": "chartOutput"}]
+        "runcmd": [{
+            "command": "python",
+            "arguments": [
+                "bugCounter.py",
+                "-u", "evolutionhub",
+                "-p", "hellotidalswamphooforangecake",
+                "-a", "2015",
+                "-b", "1",
+                "-c", "2015",
+                "-d", "3",
+                "-o", "Hoverbear",
+                "-r", "transit"],
+            "directive": "chartOutput",
+            "outputfile": "assets/project_sources/devin13/SENG371-Devin-and-Andrew/chart-output.png"}]
     },
 
     "eburdon": {

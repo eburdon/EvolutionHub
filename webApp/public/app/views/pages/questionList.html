@@ -47,12 +47,88 @@
                 
                 <p>This project was written by:<br>
                     <b>{{listControl.authors21}}, {{listControl.authors22}}</b><br><br>
-                <!--<a href="http://localhost:8081/execute/2">-->
-                <a href="/projects/2">
-                    <button id="runButton">Run Project</button>
+                    <!--<a href="http://localhost:8081/execute/2">-->
+                    <!--<button id="runButton">Run Project</button>-->
+                    <!--  class="btn btn-primary btn-lg"  -->
+                    <button type="button" data-toggle="modal" data-target="#collapseTwoModalmyModal">
+                        Run Project
+                    </button>
                     <a target="_blank" ng-href="https://github.com/devinc13/SENG371-Devin-and-Andrew"><button>Visit Repository</button></a>
-                </a>
                 </p>
+            </div>
+            <div id="collapseTwoModal">
+                <div class="modal fade" id="collapseTwoModalmyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">Project Settings</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Options</p>
+                                <form method="GET" action="projects/2">
+                                    <div class="row form-group">
+                                        <div class="col-xs-3 right-align">
+                                            <label for="startyear">Start Year</label>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <input id="startyear" type="text" name="a" class="full-width form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col-xs-3 right-align">
+                                            <label for="startmonth">Start Month</label>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <input id="startmonth" type="text" name="b" class="full-width form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="row form-group">
+                                        <div class="col-xs-3 right-align">
+                                            <label for="endyear">End Year</label>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <input id="endyear" type="text" name="c" class="full-width form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="row form-group">
+                                        <div class="col-xs-3 right-align">
+                                            <label for="endmonth">End Month</label>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <input id="endmonth" type="text" name="d" class="full-width form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="row form-group">
+                                        <div class="col-xs-3 right-align">
+                                            <label for="owner">Repository Owner</label>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <input id="owner" type="text" name="o" class="full-width form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="row form-group">
+                                        <div class="col-xs-3 right-align">
+                                            <label for="reponame">Repository Name</label>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <input id="reponame" type="text" name="r" class="full-width form-control">
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary">Run Project</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
             </div>
         </div>
     </div>

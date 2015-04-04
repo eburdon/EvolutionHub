@@ -2,7 +2,6 @@
 var express = require('express');
 var app		= express();
 var path 	= require('path');
-var projectExe = require('./projectExecutor');
 
 // Set public folder to serve public assets; will START to look here for JS, CSS, ETC. files...
 app.use(express.static(__dirname + '/public'));

@@ -79,9 +79,10 @@ angular.module('routerRoutes', [
 
 		// projects
 		.when('/projects/:projectId', {
-			templateUrl : 'app/views/pages/projectsPartial.html',
-			controller : 'projectsController',
-			controllerAs: 'pControl'
+			templateUrl : 'app/views/pages/projectsPartial.html'//,
+			// NOTE: These two lines were causing the controller function to execute twice.
+			//controller : 'projectsController',
+			//controllerAs: 'pControl'
 		});
 
 	// Set our app to have pretty URLs

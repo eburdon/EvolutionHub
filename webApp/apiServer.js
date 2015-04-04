@@ -27,9 +27,28 @@ api.get('/execute/:projectID', function(req, res, next) {
     if(project === "2") {
         projectInfo = projects.devin;
         console.log("executing project:", projectInfo);
+        console.log("parameters", req.query);
+        if(req.query.a) {
+            projectInfo.runcmd[0].arguments[6] = req.query.a;
+        }
+        if(req.query.b) {
+            projectInfo.runcmd[0].arguments[8] = req.query.b;
+        }
+        if(req.query.c) {
+            projectInfo.runcmd[0].arguments[10] = req.query.c;
+        }
+        if(req.query.d) {
+            projectInfo.runcmd[0].arguments[12] = req.query.d;
+        }
+        if(req.query.o) {
+            projectInfo.runcmd[0].arguments[14] = req.query.o;
+        }
+        if(req.query.r) {
+            projectInfo.runcmd[0].arguments[16] = req.query.r;
+        }
         projectExe.executeCommand(projectInfo.path, projectInfo.runcmd[0].command, projectInfo.runcmd[0].arguments)
             .then(function(output) {
-                res.send({project: project, output: output});
+                res.send({project: project, projectInfo: projectInfo, output: output, file: projectInfo.runcmd[0].outputfile});
             }, function failure(data) {
                 res.send({project: project, output: data});
             });

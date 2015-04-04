@@ -2,13 +2,13 @@
 var application = angular.module('routerApp', [
 	'routerRoutes', 
 	'ngAnimate'
-])
+]);
 
 // ---- MASTER CONTROLLER ---- 
 application.controller('mainController', function() {
 	var vm = this;
 	vm.bigMessage = "MAIN WELCOME MESSAGE";
-})
+});
 
 
 // ---- Primary Controllers ----
@@ -17,7 +17,7 @@ application.controller('mainController', function() {
 application.controller('homeController', function() {
 	var vm = this;
 	vm.message = "This is my homepage!";
-})
+});
 
 
 // ABOUT; Trying to get server-side response here!
@@ -27,13 +27,13 @@ application.controller('aboutController', ['$scope', function($scope) {
 
 	$scope.fooAlert = function () {
 		alert("Hello Alert - from controller");
-	}
+	};
 
 	$scope.fooConsole = function () {
 		// this should be console log
 		alert("Hello Console - from controller");
 	}
-}])
+}]);
 
 
 // CONTACT
@@ -42,7 +42,7 @@ application.controller('contactController', function() {
 	vm.message = 'Contact us!';
 
 	// FILL IN
-})
+});
 
 
 // RESEARCH 
@@ -53,7 +53,7 @@ application.controller('researchController', function() {
 	// researchLinks.js
 	vm.tool1Adr = coolTool.link1[0]; vm.tool1Txt = coolTool.link1[1];
 	vm.tool2Adr = coolTool.link2[0]; vm.tool2Txt = coolTool.link2[1];
-})
+});
 
 
 // EDUCATION 
@@ -78,7 +78,7 @@ application.controller('educationController', function() {
 	// Links to books
 	vm.bk1Adr = eduBookLink.link1[0]; vm.bk1Txt = eduBookLink.link1[1];
 	vm.bk2Adr = eduBookLink.link2[0]; vm.bk2Txt = eduBookLink.link2[1];
-})
+});
 
 
 // ---- Education Controllers ----
@@ -118,7 +118,7 @@ application.controller('softwareLawsController', function() {
 
 	vm.law8title = softLawContent.law8title;
 	vm.law8text  = softLawContent.law8text;
-})
+});
 
 // BENCHMARKS
 application.controller('benchmarksController', function() {
@@ -129,7 +129,7 @@ application.controller('benchmarksController', function() {
 	vm.paragraph1 = benchmarkContent.paragraph1;
 	vm.paragraph2 = benchmarkContent.paragraph2;
 	vm.paragraph3 = benchmarkContent.paragraph3;
-})
+});
 
 // ---- Research Controllers ----
 
@@ -196,7 +196,7 @@ application.controller('questionListController', function() {
 	vm.sum10para1 = PolloDiablo.psum1;			vm.sum10para2 = PolloDiablo.psum2;			
 	vm.sum10para3 = PolloDiablo.psum3;			vm.sum10para4 = PolloDiablo.psum4;
 
-})
+});
 
 // CODEBASELIST
 application.controller('codebaseListController', function() {
@@ -268,23 +268,36 @@ application.controller('codebaseListController', function() {
 
 application.controller('projectsController', ['$scope', '$routeParams', '$http',
 	function($scope, $routeParams, $http) {
-		console.log("running");
-		$http.get('http://localhost:8081/execute/' + $routeParams.projectId)
+		var parameters = location.search;
+		console.log("running + ", $routeParams, parameters);
+
+		$scope.projectId = $routeParams.projectId;
+
+		$http.get('http://localhost:8081/execute/' + $routeParams.projectId + parameters)
 			.success(function(data, status, headers, config) {
 				// this callback will be called asynchronously
 				// when the response is available
-				console.log("got response");
-				console.log(data);
-				$scope.projectId = $routeParams.projectId;
-				$scope.projectOutput = data;
+				$scope.dataready = true;
+				data.projectInfo.runcmd[0].arguments[4] = "redacted";
+
+				$scope.projectInfo = data.projectInfo;
+				$scope.projectOutput = data.output;
+				$scope.projectOutputFile = data.file;
+				$http.get('http://localhost:8080/' + data.file)
+					.success(function(data, status, headers, config) {
+						$scope.projectOutputFileData = data;
+					})
+					.error(function(data, status, headers, config) {
+
+					});
 			})
 			.error(function(data, status, headers, config) {
 				// called asynchronously if an error occurs
 				// or server returns response with an error status.
 				console.log("error");
 				console.log(data);
-				$scope.projectId = $routeParams.projectId;
 				$scope.projectOutput = data;
+				$scope.dataready = false;
 			});
 	}
 ]);

@@ -1,6 +1,37 @@
 <div ng-controller="projectsController">
     TBD: detail view for <span>{{projectId}}</span>
-    <div class="panel panel-default">
-        {{projectOutput}}
+    <div class="panel panel-default" ng-show="dataready">
+        <div class="panel panel-header">Project Information</div>
+        <div class="panel panel-body">
+            <p>{{projectInfo}}</p>
+        </div>
+    </div>
+
+    <div id="loadingSpinner" ng-hide="dataready" class="ng-hide">
+        Executing project and loading output...
+        <span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span>
+    </div>
+
+    <div ng-show="dataready">visible when true</div>
+
+    <div class="panel panel-default" ng-show="dataready">
+        <div class="panel panel-header">Project Output</div>
+        <div class="panel panel-body">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>{{projectOutput}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <img src="{{projectOutputFile}}">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>{{projectOutputFile}}</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
