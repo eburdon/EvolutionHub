@@ -3,17 +3,23 @@
 	<p>Hey.<br>We need to talk.</p>
 	<h1>What the heck is this app about?</h1>
 </div>
-	
+
 <div class="text">
 	<h1>About this project</h1>
 	
-	<p>This application is our final deliverable for project 2 of UVic's Software Evolution Course. Cool, right?!</p>
+	<p>This application is our final deliverable for project 2 of UVic's Software Evolution Course. Cool, right?! This page includes all of the remaining information that needs to be included such as project description, threats to validity, project management, future work, and conclusion.</p>
 
-	<p>Project 1 was to analyze different open-source codebases and answer questions related to evolution such as "Do software development methods, such as agile or waterfall, affect the long-term evolution of a project?" or "Does the amount of funding affect the number of features in a project?"</p>
+	<h3>Background info:</h3>
+	<p>Leading up to Project 1, in class we had discussed the evolution of ultra-large scale (ULS) projects and how they've evolved. We looked at some different code bases, read a few essays by Fred Brooks in his book "Mythical Man Month", and learnt about the 8 laws of evolution.</p>
 
-	<p>This application hopes to successfully bring all of the student-created tools into one place. In our Research Center, you can execute the tool server-side, and have the results displayed right in your browser! In the Edcuation Center, you can learn all about the laws of software evolution, attempt to evaluate where your project is the evolutionary process, or follow a couple of cool links for more information.
+	<p>
+	For project 1, each student was asked to build some sort of "tool" and study a code base in order to answer questions about Software Evolution. Questions such as "Do software development methods, such as agile or waterfall, affect the long-term evolution of a project?" or "Does the amount of funding affect the number of features in a project?" were asked and answered.
+	</p>
 
-	<p>What do you think? Read more about this project in its <a target="_blank" href="http://github.com/eburdon/EvolutionHub">GitHub repository.</a></p>
+	<h3>Current info:</h3>
+	<p>This is our project 2, a web application that hopes to successfully bring all of the above student-created tools into one place. In our Research Center, you can execute the tool server-side, and have the results displayed right in your browser! In the Edcuation Center, you can learn all about the laws of software evolution, attempt to evaluate where your project is the evolutionary process, or follow a couple of cool links for more information.
+
+	<p>You can read more about this project in its <a target="_blank" href="http://github.com/eburdon/EvolutionHub">GitHub repository.</a> Be sure to check out the <b>wiki</b> which includes our detailed project plan, worklog, and other project management info.</p>
 	</div>
 
 <div class="row" style="padding-left:20px">
@@ -21,24 +27,46 @@
 	<p>Software Engineering for the win!</p>
 	<div class="col-md-6">
 	<h3>Erika Burdon</h3>
-	<p>Erika is a fourth year Software Engineering student born and raised on Vancouver Island! An island girl at heart, Erika loves to go camping (rain or shine!), read up on new technology, or just fiddle around with new programming concepts, ideas, and languages. She knows American Sign Language, and German. <br>
+	<p>Erika is a fourth year Software Engineering student born and raised on Vancouver Island! An island girl at heart, Erika loves to go camping (rain or shine!), read up on new technology, or just fiddle around with new programming concepts, ideas, and languages. She knows American Sign Language and German. <br><br>
 	<b>Fun Fact: </b> She's deaf, so talk loud. Or email her. Whichever you prefer.</p>
 	<a href="https://www.linkedin.com/in/eburdon"><i class="fa fa-linkedin"></i> LinkedIn</a><br>
-	<a href="https://github.com/eburdon"><i class="fa fa-github"></i> GitHub</a><br>
+	<a href="https://github.com/eburdon">		  <i class="fa fa-github"></i>	 GitHub</a><br>
+	<a href="https://www.web.uvic.ca/~eburdon/">								 Web site</a><br>
 	</div>
 
 	<div class="col-md-6">
 	<h3>Fraser DeLisle</h3>
 	<p>Silly Fraser - He hasn't written anything about himself yet. </p>
-	<b>Fun Fact: </b> He's got big boots. I mean, like <i>really</i> big. They're somewhat terrifying. But don't worry - take the time to talk to him and you'll see what a nice guy he really is.</p>
+	<p><b>Fun Fact: </b> He's got big boots. I mean, like <i>really</i> big. They're somewhat terrifying. But don't worry - take the time to talk to him and you'll see what a nice guy he really is.</p>
 	</div>
 	<br>
+</div>
+
+<div class="text">
+	<h1>Project management</h1>
+	<p>In class, we were asked: "Whats something really cool about your project timeline?" We responded: "Our super-reasonable task time estimates!"<br>
+		Below is a graph of our estimated time required per task VS the actual time spent on each!
+		<center><img src=""></center>
+	For details, visit our <a target="_blank" ng-href="https://github.com/eburdon/EvolutionHub/wiki">GitHib wiki pages</a> for more info.
+	</p>
+</div>
+
+<div class="text">
+	<h1>Threats to Validity</h1>
+	<p>Usually, these kinds of threats only apply to research metholodgies, controlled experiments, so on and so forth. But here's a list of what we think could cause problems or break our application in the future:</p>
+	<p>
+	<ul>
+		<li><b>Unexpected updates to submodules:</b>  There could be an unexpected update to one of the student projects, such as a new, renamed, or deleted executeable script that we do not update in time. Thus, when users try to use this from our app, it won't work.</li>
+		<li><b>Errors with submodule histories:</b>We've actually already run into this problem - if a submodule project reverts to a previous commit (essentially deleting that information), our application won't successfully push to Heroku (because there's information missing).</li>
+	</ul>
+	</p>
 </div>
 
 <div class="text">
 	<h1>Future work</h1>
 	<p>
 	<ul>
+		<li>Continue adding other project 1 and 2 to both "Question List" and "Codebase list" pages</li>
 		<li>Continue with <b>Benchmarking</b> project idea and determine which evolutionary stage a project is in</li>
 		<li>Ask development team to write summaries for their projects</li>
 		<li>Ask development teams to format ALL their tool results in a visual manner so it's easy to display as a part of this application</li>
@@ -47,4 +75,9 @@
 		<li>Better application styling/design</li>
 	</ul>
 	</p>
+</div>
+
+<div class="text">
+	<h1>The Grand Conclusion</h1>
+	<p>Overall, this project was successful! Sure, we didn't meet our goal of being able to execute ALL project 1's from our web application (severe time constraints - we only had three weeks to work on this in addition to managing 5 other courses), but we did get at least one working before the deadline. We successfully built a modularized platform in which adding the remaining projects should be really easy. This is a well structured web application that truly shows the potential of this idea; this web application has great potential to be a learning hub for future Software Evolution Courses. The format and information added to the Education Center so far supports this in two ways: 1) The blog-posting style could be used for lesson plans in the future, and 2) links to useful evolution analysis tools, interesting evolution papers, and online books we read in the class have been included. Similary, the research center is cleanly separated into two perspectives, questions and codebases. From both, you can expand for more information about the idea and see the relevant projects you can run. Finally, this application invites user feedback by suggesting visitors to contact us by leaving a comment on our GitHub repository. One of the learning outcomes for this class was to use GitHub in a educational setting, and this is another way in which students can interact with the site.</p>
 </div>

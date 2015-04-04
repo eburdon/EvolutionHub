@@ -3,7 +3,7 @@ var softLawContent = {
 	paragraph1: "Oh wait - that's a law for robots. Nevermind. What I meant to say was that software projects have a tendency to follow a set of 8 laws!",
 	paragraph2: "Originally formulated in 1974 by Meir Manny Lehman and Laszlo Belady, these laws describe forces driving new development and those that slow down progress. This was done during the emerging software crisis - the authors set out to create a set of predictable rules that any long-term software project hoping to survive must obey.",
 	paragraph3: "My favorite part about these laws of evolution is that they themselves have evolved! Originally a small set of 3 rules, they were expanded into 5 in 1978, 6 in 1991, and finally 8 in 1996. As you're reading, try to think of how a specific open-source projects proves or disproves the law. How can you show this?",
-	paragraph4: "'E-type' system refers to an 'embedded' system", 
+	paragraph4: "'E-type' system refers to an 'environmental' system. It's highly complex and depends on application implementation.", 
 
 
 	law1title: 	"Law of Continuing Change",
