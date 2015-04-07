@@ -31,7 +31,10 @@ Deliverables
 
 Methodology
 -----------
-<b>TBD</b>
+Our project:
+* Why we used the methods
+* How it worked
+* What could have been done better
 
 
 Run Instructions (prototype)
