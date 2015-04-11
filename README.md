@@ -6,6 +6,10 @@ Quick Links
 
 [Work Log](https://github.com/eburdon/EvolutionHub/wiki/Work-Log) (In Wiki)
 
+[Video Demonstration]() 
+
+["About" page](https://github.com/eburdon/EvolutionHub/wiki/About)
+
 Intro
 ------
 
@@ -37,12 +41,15 @@ Our project:
 * What could have been done better
 
 
-Run Instructions (prototype)
+Run Instructions (without Heroku)
 -----------------------------
+* Download and extract repository .zip file
 * Open command line within folder containing server.js
+* Execute 'npm install'
 * Execute 'node server.js'
+* Execute 'node apiserver.js'
 * Navigate to http://localhost:8080/
-* View application
+* Voila!
 
 
 Learning goals: languages/tools
